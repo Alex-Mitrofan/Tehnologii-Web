@@ -1,2 +1,3 @@
 # Tehnologii-Web
-proiect
+Mitrofan Alexandru
+Ciocan Alexandru
