@@ -34,6 +34,7 @@ header {
 .profile {
     display: flex;
     align-items: center;
+    padding-right: 1em;
 }
 
 .username {
@@ -51,29 +52,8 @@ header {
 
 }
 
-footer {
-     
-    background-color: rgb(148, 188, 231);
-    padding: 2em;
-    
-    bottom: 0;
-    left: 0;
-     
-}
 
-ul {
-     
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- 
-}
 
-li {
-    margin: 1.5em;
-}
- 
 
 main {
     display: flex;
@@ -89,10 +69,28 @@ nav {
     margin-right: 1.5em;
 }
 
+ul {
+     
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+     
+}
+
+li {
+    padding: 1.5em;
+    font-size: 1.2em;
+    border-bottom: 0.2em solid rgb(205 228 241);
+    width: 50%;
+}
+ 
+
 section {
     margin: 1em;
     background-color: rgb(255, 255, 255);
-    
   
     width: 100%;
     box-sizing: border-box;
@@ -115,6 +113,24 @@ article {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+}
+
+
+footer {
+    background-color: rgb(148, 188, 231);
+    padding: 2em;
+    bottom: 0;
+    left: 0;
+     
+}
+
+
+a {
+    text-decoration: none !important;
+  }
+
+a:visited{ 
+    color: rgb(0, 0, 0); 
 }
 
  @font-face {
