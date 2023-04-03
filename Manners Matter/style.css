@@ -11,17 +11,49 @@ html  {
 }
 
 header {
-    padding: 3em;  
-    background-color: rgb(87, 78, 67);  
+    padding: 1em;  
+    background-color: rgb(148, 188, 231);  
     display: flex; 
     justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Logo";
+    font-size: 2em;
+    -webkit-text-stroke: 0.05em black;
+    color:rgb(255, 255, 255)
     
 }
 
+.title {
+    font-size: 1.5em;
+    margin-left: -1em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    padding-right: 1em;
+}
+
+.avatar {
+    border-radius: 50%;
+    background-image: url("./images/avatar.png");
+    width: 3.5em; 
+    height: 3.5em;
+    vertical-align: middle; 
+    background-size: auto 100%;
+    
+
+}
 
 footer {
      
-    background-color: rgb(87, 78, 67);
+    background-color: rgb(148, 188, 231);
     padding: 2em;
     
     bottom: 0;
@@ -45,14 +77,14 @@ li {
 
 main {
     display: flex;
-    background-color: rgb(168, 144, 190);
+    background-color: rgb(255, 255, 255);
     height: 100%;
     
 }
 
 nav {
      
-    background-color: rgb(208, 249, 249);
+    background-color: rgb(202, 241, 241);
     margin-left: 1.5em;
     margin-right: 1.5em;
 }
@@ -85,4 +117,7 @@ article {
     width: 90%;
 }
 
- 
+ @font-face {
+    font-family: Logo;
+    src: url("./fonts/LilitaOne-Regular.ttf");
+ }
