@@ -1,5 +1,6 @@
 body {
     margin: 0;   
+    font-family: Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,6 +14,7 @@ html  {
 header {
     padding: 1em;  
     background-color: rgb(148, 188, 231);  
+    background-image: linear-gradient(rgb(148, 188, 231), rgb(73 120 171));
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -20,11 +22,18 @@ header {
 
 .logo {
     font-family: "Logo";
+    font-size: 2.3em;
+    -webkit-text-stroke: 0.05em black;
+    color:rgb(255, 255, 255)
+}
+
+.logo a:visited {
+    font-family: "Logo";
     font-size: 2em;
     -webkit-text-stroke: 0.05em black;
     color:rgb(255, 255, 255)
-    
 }
+
 
 .title {
     font-size: 1.5em;
@@ -82,7 +91,7 @@ ul {
 
 li {
     padding: 1.5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
     border-bottom: 0.2em solid rgb(205 228 241);
     width: 50%;
 }
@@ -118,6 +127,7 @@ article {
 
 footer {
     background-color: rgb(148, 188, 231);
+    background-image: linear-gradient(180deg, rgb(148, 188, 231), rgb(73 120 171));
     padding: 2em;
     bottom: 0;
     left: 0;
@@ -126,7 +136,7 @@ footer {
 
 
 a {
-    text-decoration: none !important;
+    text-decoration: none;
   }
 
 a:visited{ 
