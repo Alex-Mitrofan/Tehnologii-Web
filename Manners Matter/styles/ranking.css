@@ -1,0 +1,61 @@
+#Score{
+    display:inline-flex;
+    margin-top: 0em;
+}
+#container-paces{
+    display:flex;
+    width: 100%;
+    margin-bottom: 0em;
+    justify-content: space-evenly;
+}
+.best-ones{
+    display:flex;
+    align-items: start;
+    align-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 1em;
+   
+    
+}
+.first-place{
+  background-color:yellow ;
+  font-size: 1em;
+  text-align: center;
+  height:15em;
+  width: 15%;
+  border-radius: 25%;
+  
+}
+p{
+    margin-top:5%;
+    border-color: black;
+    border-radius: 15%;
+    font-weight: bold;
+   
+    
+}
+.second-place{
+  background-color: gray;
+  text-align: center;
+  height: 13em;
+  width: 15%;
+  float:left;
+  margin-top:2em;
+  border-radius: 25%;
+  
+}
+.third-place{
+  background-color: brown;
+  text-align: center;
+  height: 10em;
+  width: 15%;
+  float:right;
+  margin-top:5em;
+  margin-right:2em;
+  border-radius: 25%;
+}
+.the-others{
+    margin-top:2em;
+    color:red;
+    align-content: center;
+}
