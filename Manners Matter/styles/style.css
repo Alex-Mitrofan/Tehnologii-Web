@@ -13,8 +13,8 @@ html  {
 
 header {
     padding: 1em;  
-    background-color: rgb(148, 188, 231);  
-    background-image: linear-gradient(rgb(186 255 207), rgb(9 77 35 / 80%));
+    background-color: rgb(83 124 167);
+    background-image: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 53%));
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -91,7 +91,7 @@ main {
 
 nav {
      
-    background-color: rgb(187 250 203);
+    background-color: rgb(111 123 141);
     margin-left: 1.5em;
     margin-right: 1.5em;
 }
@@ -110,7 +110,7 @@ nav ul {
 nav ul li {
     padding: 1.5em;
     font-size: 1.1em;
-    border-bottom: 0.2em solid rgb(185 239 211);
+    border-bottom: 0.2em solid rgb(127 153 167);
     width: 50%;
 }
  
@@ -141,10 +141,10 @@ section {
 
 
 footer {
-    background-color: rgb(148, 188, 231);
-    background-image: linear-gradient(180deg,rgb(186 255 207), rgb(9 77 35 / 80%));
+    background-color: rgb(83 124 167);
+    background-image: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 53%));
     padding: 2em;
-  
+    color: white;
     margin-top: auto;
      
 }
