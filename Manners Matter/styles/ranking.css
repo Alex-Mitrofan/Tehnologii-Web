@@ -72,12 +72,6 @@
   margin-right:2em;
    
 }
-.the-others{
-    margin-top:2em;
-    color:red;
-    align-content: center;
-}
-
 p{
   margin-top:-0.1em;
   border-color: black;
@@ -93,4 +87,61 @@ nav ul li:nth-child(5){
 
 nav ul li:nth-child(5) a{
   color: white;
+}
+.table{
+  height:30em;
+  overflow: auto;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  min-width: 15em;
+}
+thead th{
+  position: sticky;
+  top:0;
+  background-color: #f6f9fc;
+  color:#8493a5;
+  font-size:1.2em;
+}
+th,td{
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 20px;
+  word-break: break-all;
+  text-align: center;
+}
+td img{
+  height: 2em;
+  width: 2em;
+  object-fit:cover;
+  border-radius:15px;
+  border:5px solid gray;
+  vertical-align: middle;
+}
+tr:hover td{
+  color :rgb(210, 190, 190);
+  cursor:pointer;
+  background-color: white;
+}
+.pagination
+{
+  display:flex;
+  justify-content: end;
+  width:100%;
+  padding:10px 20px;
+  background-color: #8493a5;
+}
+.pagination div{
+padding: 10px;
+border:2px solid #d5d0d0;
+height:40px;
+width:40px;
+border-radius:100%;
+display:flex;
+justify-content: center;
+align-items: center;
+background-color:rgb(53, 138, 203);
+color:white;
+box-shadow:0px 0px 4px 0px ;
+margin:0 5px;
 }

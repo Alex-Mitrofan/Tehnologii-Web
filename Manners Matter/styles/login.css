@@ -35,5 +35,12 @@ h1{
     text-align: center;
     display: none; 
 }
+input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgb(202, 202, 202)
+}
 
  
