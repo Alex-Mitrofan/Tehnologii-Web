@@ -1,3 +1,4 @@
+ 
 .article_image {
     width: auto;
     height: auto;
@@ -29,6 +30,15 @@ a:hover {
 img{
     border-left: 0.08em solid rgb(65, 65, 65);
     
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.pages{
+    align-self: center;
 }
 
 nav ul li:nth-child(1){
