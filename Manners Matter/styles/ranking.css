@@ -2,12 +2,28 @@
     display:inline-flex;
     margin-top: 0em;
 }
-#container-paces{
+#container-places{
     display:flex;
     width: 100%;
-    margin-bottom: 0em;
-    justify-content: space-evenly;
+    
+    margin-left:6.5em;
+    padding-top:10em;
+    
 }
+
+.podium{  
+  width: 100%;
+  
+}
+
+.podium_image{
+  background-image: url("../images/podium.png");
+  width: 20em; 
+  height: 20em;
+ 
+  background-size: auto 100%;
+}
+
 .best-ones{
     display:flex;
     align-items: start;
@@ -18,44 +34,55 @@
     
 }
 .first-place{
-  background-color:yellow ;
+   
   font-size: 1em;
   text-align: center;
-  height:15em;
-  width: 15%;
-  border-radius: 25%;
-  
+  height:5.6em;
+  width: 4.4em;
+  margin-right: 0.3em;  
 }
-p{
-    margin-top:5%;
-    border-color: black;
-    border-radius: 15%;
-    font-weight: bold;
-   
-    
+
+.first_place_image{
+  border-radius: 50%;
+  background-image: url("../images/profile_pic.jpg");
+  width: 4em; 
+  height: 4em;
+  margin-left:0.3em;
+  margin-top:0.6em;
+  background-size: auto 100%;
 }
+
 .second-place{
   background-color: gray;
   text-align: center;
-  height: 13em;
-  width: 15%;
+  height: 3.3em;
+  width: 4em;
   float:left;
-  margin-top:2em;
-  border-radius: 25%;
+  margin-top:2.5em;
+  margin-right: 0.4em;
   
 }
 .third-place{
   background-color: brown;
   text-align: center;
-  height: 10em;
-  width: 15%;
+  height: 4em;
+  width: 4.2em;
   float:right;
-  margin-top:5em;
+  margin-top: 1.8em;
   margin-right:2em;
-  border-radius: 25%;
+   
 }
 .the-others{
     margin-top:2em;
     color:red;
     align-content: center;
+}
+
+p{
+  margin-top:-0.1em;
+  border-color: black;
+  border-radius: 15%;
+  font-weight: bold;
+ 
+  
 }

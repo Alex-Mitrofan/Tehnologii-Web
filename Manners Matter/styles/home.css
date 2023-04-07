@@ -1,6 +1,7 @@
 .article_image {
-    width: 25em;
-    height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 30em;
 }
 
 article {

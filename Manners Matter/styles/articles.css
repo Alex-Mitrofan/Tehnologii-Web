@@ -1,10 +1,36 @@
 .article_image {
-    width: 30em;
-    height: 20em;
+    width: auto;
+    height: auto;
+    max-width: 55em;
  
 }
 
 .div_articles{
     padding-left: 3em;
     padding-right: 15em;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 0.07em solid;
+    margin-bottom: 2em;
+}
+
+h2{
+    margin-bottom: 1.5em;
+}
+
+h3{
+    margin-bottom: 1.3em;
+}
+
+img{
+   
+    border: 0.01em solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 50%;
 }

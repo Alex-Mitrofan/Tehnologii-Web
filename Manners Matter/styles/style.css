@@ -10,6 +10,8 @@ html  {
     height: 100%;
 }
 
+ 
+
 header {
     padding: 1em;  
     background-color: rgb(83 124 167);
@@ -17,7 +19,10 @@ header {
     display: flex; 
     justify-content: space-between;
     align-items: center;
+  
 }
+
+
 
 .logo {
     font-family: "Logo";
@@ -78,14 +83,9 @@ header {
 
 }
 
-
-
-
 main {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    
-    
+    display: flex;  
+    background-color: rgb(240, 240, 240);
 }
 
 nav {
@@ -119,7 +119,7 @@ li a:hover {
 
 section {
     margin: 1em;
-    background-color: rgb(255, 255, 255);
+    
   
     width: 100%;
     box-sizing: border-box;
@@ -132,7 +132,6 @@ section {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
     
 }
 
