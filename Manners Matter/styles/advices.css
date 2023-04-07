@@ -1,0 +1,7 @@
+nav ul li:nth-child(3){
+    border-bottom: 0.2em solid rgb(181, 209, 224);
+}
+
+nav ul li:nth-child(3) a{
+    color: white;
+}

@@ -54,4 +54,10 @@
     
 }
 
- 
+nav ul li:nth-child(2){
+    border-bottom: 0.2em solid rgb(181, 209, 224);
+}
+
+nav ul li:nth-child(2) a{
+    color: white;
+}

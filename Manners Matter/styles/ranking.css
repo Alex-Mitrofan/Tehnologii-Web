@@ -86,3 +86,11 @@ p{
  
   
 }
+
+nav ul li:nth-child(5){
+  border-bottom: 0.2em solid rgb(181, 209, 224);
+}
+
+nav ul li:nth-child(5) a{
+  color: white;
+}

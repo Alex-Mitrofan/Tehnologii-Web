@@ -96,7 +96,6 @@ nav {
 }
 
 nav ul {
-     
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -112,19 +111,20 @@ nav ul li {
     border-bottom: 0.2em solid rgb(127 153 167);
     width: 50%;
 }
+
+nav ul li:hover{
+    border-bottom: 0.2em solid rgb(181, 209, 224);
+}
+
  
 li a:hover {
-    color: rgb(57, 94, 181);
+    color: rgb(255, 255, 255);
 }
 
 section {
-    margin: 1em;
-    
-  
+    margin: 1em; 
     width: 100%;
     box-sizing: border-box;
-    
-
 }
 
 .div_articles {
@@ -134,8 +134,6 @@ section {
     box-sizing: border-box;
     
 }
-
-
 
 
 footer {

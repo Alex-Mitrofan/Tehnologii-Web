@@ -2,10 +2,10 @@
     width: auto;
     height: auto;
     max-width: 30em;
+    max-width: 25em;
 }
 
 article {
-     
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -24,4 +24,17 @@ article {
  
 a:hover {
     color: rgb(13, 193, 55)
+}
+
+img{
+    border-left: 0.08em solid rgb(65, 65, 65);
+    
+}
+
+nav ul li:nth-child(1){
+    border-bottom: 0.2em solid rgb(181, 209, 224);
+}
+
+nav ul li:nth-child(1) a{
+    color: white;
 }
