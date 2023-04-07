@@ -4,10 +4,10 @@
 }
 #container-places{
     display:flex;
-    width: 100%;
-    
-    margin-left:6.5em;
-    padding-top:10em;
+    width: 40em;
+    height: 100%;
+    margin-left:0em;
+    padding-top:5em;
     
 }
 
@@ -18,10 +18,11 @@
 
 .podium_image{
   background-image: url("../images/podium.png");
-  width: 20em; 
+  width: 26.4em; 
   height: 20em;
- 
+  justify-content: center;
   background-size: auto 100%;
+  margin-left: 25em;
 }
 
 .best-ones{
@@ -34,43 +35,65 @@
     
 }
 .first-place{
-   
+  /*background-color:yellow;*/
   font-size: 1em;
   text-align: center;
-  height:5.6em;
-  width: 4.4em;
-  margin-right: 0.3em;  
+  height:10em;
+  width: 10em;
+  margin-right: 0.4em; 
+  margin-top:5em;
+  
 }
 
 .first_place_image{
   border-radius: 50%;
   background-image: url("../images/profile_pic.jpg");
-  width: 4em; 
-  height: 4em;
-  margin-left:0.3em;
-  margin-top:0.6em;
+  width: 5em; 
+  height: 5em;
+  margin-left:0.4em;
+  margin-top:-0.95em;
   background-size: auto 100%;
 }
 
 .second-place{
-  background-color: gray;
+ /* background-color: gray;*/
   text-align: center;
-  height: 3.3em;
-  width: 4em;
+  height: 6em;
+  width: 10em;
   float:left;
-  margin-top:2.5em;
-  margin-right: 0.4em;
-  
+  margin-top:6em;
+  margin-right: 0em;
+  margin-left:0em;
+}
+.second_place_image{
+  border-radius: 50%;
+  background-image: url("../images/profile_pic.jpg");
+  width: 5em; 
+  height: 5em;
+  margin-left:1.5em;
+  margin-top:0.8em;
+  background-size: auto 100%;
+
 }
 .third-place{
-  background-color: brown;
+  /*background-color: brown;*/
   text-align: center;
   height: 4em;
-  width: 4.2em;
+  width: 10em;
   float:right;
-  margin-top: 1.8em;
-  margin-right:2em;
+  margin-top: 8em;
+  margin-right:0em;
    
+}
+.third_place_image{
+  border-radius: 50%;
+  background-image: url("../images/profile_pic.jpg");
+  width: 5em; 
+  height: 5em;
+  margin-left:0;
+  margin-top:-1em;
+  margin-right: 3.5em;
+  background-size: auto 100%;
 }
 p{
   margin-top:-0.1em;
@@ -80,6 +103,7 @@ p{
  
   
 }
+
 
 nav ul li:nth-child(5){
   border-bottom: 0.2em solid rgb(181, 209, 224);
@@ -108,7 +132,7 @@ th,td{
   border-bottom: 1px solid #dddddd;
   padding: 10px 20px;
   word-break: break-all;
-  text-align: center;
+  text-align: left;
 }
 td img{
   height: 2em;
@@ -117,6 +141,7 @@ td img{
   border-radius:15px;
   border:5px solid gray;
   vertical-align: middle;
+  margin-left: 5px;
 }
 tr:hover td{
   color :rgb(210, 190, 190);
@@ -127,9 +152,8 @@ tr:hover td{
 {
   display:flex;
   justify-content: end;
-  width:100%;
+  width:70%;
   padding:10px 20px;
-  background-color: #8493a5;
 }
 .pagination div{
 padding: 10px;
@@ -140,7 +164,7 @@ border-radius:100%;
 display:flex;
 justify-content: center;
 align-items: center;
-background-color:rgb(53, 138, 203);
+background-color:rgb(111 123 141);
 color:white;
 box-shadow:0px 0px 4px 0px ;
 margin:0 5px;
