@@ -114,8 +114,10 @@ header {
 
 main {
     display: flex;  
-    background-image: url("../images/question_background_quiz.jpg");
-    background-size: 25em , 25em;
+    /*background-image: url("../images/quiz_background.png");*/
+    background-size: cover;
+    height: 100%;
+    background-image:linear-gradient(90deg,rgb(16, 17, 16), rgb(153, 167, 191), rgb(138, 138, 113));
 }
 
 nav {
