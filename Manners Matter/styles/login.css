@@ -43,4 +43,32 @@ input{
     background-color: rgb(202, 202, 202)
 }
 
- 
+@media screen and (max-width: 740px){
+    .signin_box{
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 525px){
+    .signin_box{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 455px){
+    .signin_box{
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .signin_box{
+        margin-left: 11%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .signin_box{
+        margin-left: 8%;
+    }
+}
