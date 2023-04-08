@@ -239,6 +239,10 @@ section{
     nav ul li{
         width:100%;
         padding-right: 0;
+        font-size: 0.9em;
+    }
+    nav ul li:nth-child(1){
+        display:none;
     }
 
 }
@@ -248,6 +252,27 @@ section{
     nav ul li{
         width:100%;
         padding-right: 0;
+        font-size: 0.9em;
+    }
+
+    nav ul li:nth-child(2){
+        display:none;
     }
 
 }
+
+@media screen and (max-width: 430px){  
+    .article_image {
+        max-width: 20em;
+        max-height: 12em;
+    }
+
+    article{
+        width: 80%;  
+    }
+    .div_articles{
+        width: 94%;  
+    }
+
+
+ }

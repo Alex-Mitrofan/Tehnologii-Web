@@ -1,4 +1,4 @@
- .article_image {
+.article_image {
     width: auto;
     height: auto;
     max-width: 30em;
@@ -12,7 +12,6 @@ article {
     display: flex;
     border-bottom: 0.1em solid rgb(65, 65, 65);
     border-top: 0.1em solid rgb(65, 65, 65);
-    width: 90%;
     margin-bottom: 1em;
 }
 
@@ -134,3 +133,17 @@ nav ul li:nth-child(1) a{
     }
 
 }
+
+@media screen and (max-width: 430px){  
+    .article_image {
+        max-width: 20em;
+        max-height: 12em;
+    }
+
+    article{
+        width: 100%;
+      
+       
+    }
+
+ }
