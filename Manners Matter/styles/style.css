@@ -211,7 +211,7 @@ section{
 
     }
 
-    @media screen and (max-width: 980px){
+@media screen and (max-width: 980px){
     nav{
         margin-right: 0;
     }

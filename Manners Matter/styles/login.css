@@ -29,9 +29,9 @@ input[type="submit"]{
 }
 
 h1{
-    font-size: 2em;
+    font-size: 1.3em;
     padding-bottom: 0.1em;
-    border-bottom: 0.05em solid;
+    border-bottom: 0.08em solid;
     text-align: center;
     display: none; 
 }
@@ -42,6 +42,13 @@ input{
     border-bottom-style: groove;
     background-color: rgb(202, 202, 202)
 }
+
+@media screen and (max-width: 980px){
+    h1{
+        display: block;
+    }
+}
+
 
 @media screen and (max-width: 740px){
     .signin_box{
