@@ -38,3 +38,20 @@ img{
 .tags {
     margin-top: 3em;
 }
+
+
+@media screen and (max-width: 1100px){
+    .article_image {
+        max-width: 45em;
+    }
+    .div_articles{
+        padding: 0;
+    }
+    
+ }
+
+ @media screen and (max-width: 1040px){
+    .article_image {
+        max-width: 35em;
+    }
+ }
