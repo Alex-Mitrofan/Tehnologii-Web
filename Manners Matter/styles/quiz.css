@@ -153,10 +153,12 @@ li a:hover {
 
 section {
     margin: 1em; 
-    width: 50%;
+    width: 75%;
     box-sizing: border-box;
     border : solid ;
     border-color: white;
+    margin-top: 2em;
+    border-radius:8%;
 }
 
 .div_articles {
@@ -165,6 +167,7 @@ section {
     height: 100%;
     box-sizing: border-box;
     justify-content: center;
+    margin-right: 3.4em;
     
 }
 
@@ -202,9 +205,9 @@ a:visited{
     color:white;
     font-size:large;
     text-align: center;
-    margin-right:5em;
+   /* margin-right:5em;*/
  }
- .current-question{
+ p.current-question{
     color:white;
     margin-left:1em;
  }
@@ -214,5 +217,24 @@ a:visited{
     width: auto;
     margin-right:1em;
  }
+.question{
+   text-align: center;
+   color:white; 
+   /*margin-right:1.5em;*/
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+    float:center;
+    padding-left:3.5em;
+    height: 100%;
+}
+label:first-child{
+    padding-top:1em;
+}
+label{
+    color:white;
+    padding-bottom: 2em;
+}
 
