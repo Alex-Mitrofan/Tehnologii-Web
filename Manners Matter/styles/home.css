@@ -96,6 +96,11 @@ nav ul li:nth-child(1) a{
     article{
         flex-direction: column;
     }
+
+    img{
+        border: 0.08em solid rgb(65, 65, 65);
+        
+    }
 }
 
 @media screen and (max-width: 745px){
