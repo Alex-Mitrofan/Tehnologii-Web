@@ -1,15 +1,13 @@
-section{
-    display:flex;
-    justify-content: space-evenly;
-    padding-left: 2%;
-    
-   
-}
-p{
-    text-align: justify;
-    display:flex;
-    width: 80%;
 
+p{
+    display:flex;
+}
+img{
+    float:right;
+    padding-bottom: 3em;
+    position: sticky ;
+    width: 70%;
+    height: 70%;
 }
 .attention{
     color:red;
@@ -31,17 +29,19 @@ label{
     margin-right: 3em;
 }
 img{
-    height: 50%;
+    height: 15em;
     width: 20em;
     margin-right: 1em;
+    margin-bottom: 2em;
+    padding-bottom: 3em;
 }
 span input{
-    width: 10em;
-    height:5em;
-    background-color: rgb(117, 114, 139);
-    border-radius: 25%;
+    width: auto;
+    height: auto;
+    border-radius: 5em;
     margin-left: 5em;
-    font-weight: bold;
+    text-align: center;
+
 }
 .content{
     margin-left: 1em;
