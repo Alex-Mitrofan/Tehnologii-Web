@@ -116,8 +116,7 @@ main {
     display: flex;  
 }
 
-nav {
-     
+nav {   
     background-color: rgb(111 123 141);
     margin-left: 1.5em;
     margin-right: 1.5em;
@@ -237,5 +236,18 @@ section{
 
 @media screen and (max-width: 714px){
 
+    nav ul li{
+        width:100%;
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    nav ul li{
+        width:100%;
+        padding-right: 0;
+    }
 
 }
