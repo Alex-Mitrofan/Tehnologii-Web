@@ -2,7 +2,7 @@
     width: auto;
     height: auto;
     max-width: 55em;
- 
+    max-height: 25em;
 }
 
 .div_articles{
@@ -38,3 +38,32 @@ img{
 .tags {
     margin-top: 3em;
 }
+
+
+@media screen and (max-width: 1100px){
+    .article_image {
+        max-width: 45em;
+        max-height: 17em;
+    }
+    .div_articles{
+        padding: 0;
+    }
+    
+ }
+
+ @media screen and (max-width: 1040px){
+    .article_image {
+        max-width: 30em;
+        max-height: 11em;
+    }
+ }
+
+
+ @media screen and (max-width: 800px){
+    .article_image {
+        max-width: 20em;
+        max-height: 9em;
+    }
+ }
+
+
