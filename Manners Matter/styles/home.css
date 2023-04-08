@@ -92,6 +92,12 @@ nav ul li:nth-child(1) a{
     }    
 }
 
+@media screen and (max-width: 775px){
+    article{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 745px){
     .pagination{
         width:80%;
