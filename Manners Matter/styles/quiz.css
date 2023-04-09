@@ -1,157 +1,11 @@
-body {
-    margin: 0;   
-    font-family: Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    background-color: rgb(240, 240, 240);
-}
  
-header {
-    padding: 0.1em;  
-    background-color: rgb(83 124 167);
-    background-image: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 53%));
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-  
-}
-
-
-.logo {
-    padding-left: 0.2em;
-    font-family: "Logo";
-    font-size: 2.3em;
-    -webkit-text-stroke: 0.05em black;
-    color:rgb(255, 255, 255)
-}
-
-.logo a:visited {
-    font-family: "Logo";
-    font-size: 2em;
-    -webkit-text-stroke: 0.05em black;
-    color:rgb(255, 255, 255)
-}
-
-
-.title {
-    font-size: 1.5em;
-    margin-left: -1em;
-    color:rgb(255, 255, 255)
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-     
-}
-
-
-.username a{
-    color:rgb(255, 255, 255);
-}
-
-.username a:visited:hover{
-    color: rgb(39, 87, 197);
-}
-
-.username a:hover{
-    color: rgb(39, 87, 197);
-}
-
-
-.username a:visited{
-    color:rgb(255, 255, 255)
-}
-
-.avatar {
-    border-radius: 50%;
-    background-image: url("../images/avatar.png");
-    width: 3.5em; 
-    height: 3.5em;
-    vertical-align: middle; 
-    background-size: auto 100%;
-}
-
-.dropdown_profile{
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
-    padding-left: 1em;
-    width: 5em;
-}
-
-.dropdown_content{
-    display:none;   
-    position: fixed;
-    flex-direction: column;
-    margin-top: 4em;
-    background-color: rgb(211, 211, 211);
-    width: 6.2em;
-    border: 0.02em solid black;
-}
-
-.dropdown_content a{
-    padding:0.6em;
-    padding-right: 0.1em;
-}
-
-.dropdown_content a:hover{
-    color:rgb(13, 193, 55);
-}
-
-.dropdown_content a:nth-child(1) {
-    border-bottom: 0.02em solid black;
-}
-
-
-.dropdown_profile:hover .dropdown_content{
-    display: flex;
-    align-self:last baseline;
-}
-
 main {
-    display: flex;  
     /*background-image: url("../images/quiz_background.png");*/
-    background-size: cover;
-    height: 100%;
+    /*background-size: cover;*/
     background-image:linear-gradient(90deg,rgb(16, 17, 16), rgb(153, 167, 191), rgb(138, 138, 113));
+    height: 100%;
 }
 
-nav {
-     
-    background-color: rgb(111 123 141);
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 0;
-     
-}
-
-nav ul li {
-    padding: 1.5em;
-    font-size: 1.1em;
-    border-bottom: 0.2em solid rgb(127 153 167);
-    width: 50%;
-}
-
-nav ul li:hover{
-    border-bottom: 0.2em solid rgb(181, 209, 224);
-}
-
- 
-li a:hover {
-    color: rgb(255, 255, 255);
-}
 
 section {
     margin: 1em; 
@@ -173,16 +27,7 @@ section {
     
 }
 
-
-footer {
-    background-color: rgb(83 124 167);
-    background-image: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 53%));
-    padding: 2em;
-    color: white;
-    margin-top: auto;
-     
-}
-
+ 
 
 a {
     text-decoration: none;
@@ -216,7 +61,7 @@ a:visited{
  .next-question{
     float:right;
     height: 3em;
-    width: 10%;
+    width: 15%;
     margin-right:1.5em;
     border-radius: 5em;
     background-color: rgb(185, 227, 250);
@@ -232,7 +77,6 @@ form{
     flex-direction: column;
     float:center;
     padding-left:3.5em;
-    height: 100%;
 }
 label:first-child{
     padding-top:1em;
@@ -242,3 +86,51 @@ label{
     padding-bottom: 2em;
 }
 
+@media screen and (max-width:1168px) {
+
+     .next-question{
+        width: 20%;
+     }
+}
+
+@media screen and (max-width:765px) {
+
+    .next-question{
+       width: 25%;
+    }
+}
+
+@media screen and (max-width:605px) {
+
+    .next-question{
+       width: 30%;
+    }
+}
+
+@media screen and (max-width:512px) {
+
+    .next-question{
+       width: 35%;
+    }
+}
+
+@media screen and (max-width:446px) {
+
+    .next-question{
+       width: 40%;
+    }
+}
+
+@media screen and (max-width:424px) {
+
+    .next-question{
+       width: 45%;
+    }
+}
+
+@media screen and (max-width:388px) {
+
+    .next-question{
+       width: 50%;
+    }
+}
