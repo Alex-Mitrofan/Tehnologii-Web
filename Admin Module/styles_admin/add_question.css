@@ -17,7 +17,7 @@ img{
 .info-challenge{
     display: flex;
     margin-top: 4em;
-    flex-direction: line;
+     
     
 }
 form label input{
@@ -49,7 +49,6 @@ nav ul li:nth-child(2) a{
 .question{
     display: flex;
     justify-content: center;
-    margin-right:5em;
 }
  
 .style{
@@ -74,7 +73,8 @@ input{
     width: 30em;
     
 }
-  
+ 
+
 @media screen and (max-width:550px){
     input{
         width: 25em;
@@ -92,6 +92,9 @@ input{
 @media screen and (max-width:428px){
     input{
         width: 15em;
-        
+         
+    }
+    .question{
+        margin-left: 1em;
     }
 }
