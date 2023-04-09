@@ -1,0 +1,55 @@
+
+p{
+    display:flex;
+}
+img{
+    float:right;
+    padding-bottom: 3em;
+    position: sticky ;
+    width: 70%;
+    height: 70%;
+}
+.attention{
+    color:red;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top:1em;
+}
+.info-challenge{
+    display: flex;
+    margin-top: 4em;
+    flex-direction: line;
+    
+}
+form label input{
+ display:flex;
+ justify-content: space-between;
+}
+label{
+    margin-right: 3em;
+}
+img{
+    height: 15em;
+    width: 20em;
+    margin-right: 1em;
+  
+}
+span input{
+    width: auto;
+    height: auto;
+    border-radius: 5em;
+    margin-left: 5em;
+    text-align: center;
+
+}
+.content{
+    margin-left: 1em;
+}
+
+nav ul li:nth-child(4){
+    border-bottom: 0.2em solid rgb(181, 209, 224);
+}
+
+nav ul li:nth-child(4) a{
+    color: white;
+}
