@@ -26,30 +26,19 @@ form label input{
 }
 label{
     margin-right: 3em;
-}
-img{
-    height: 15em;
-    width: 20em;
-    margin-right: 1em;
-  
-}
-span input{
-    width: auto;
-    height: auto;
-    border-radius: 5em;
-    margin-left: 5em;
-    text-align: center;
-
-}
-.content{
-    margin-left: 1em;
+    margin-top: 3em;
 }
 
-nav ul li:nth-child(4){
+input{
+    margin-bottom: 1.1em;
+}
+
+ 
+nav ul li:nth-child(2){
     border-bottom: 0.2em solid rgb(181, 209, 224);
 }
 
-nav ul li:nth-child(4) a{
+nav ul li:nth-child(2) a{
     color: white;
 }
 .div_articles{
@@ -62,26 +51,47 @@ nav ul li:nth-child(4) a{
     justify-content: center;
     margin-right:5em;
 }
-label{
-    padding-top: 2em;
-}
+ 
 .style{
     display:flex;
     border:solid;
-    border-color:blue;
+    border-color:rgb(62, 62, 106);
     width: 30em;
     justify-content: center;
     height: 20em;
+    margin-top: 3em;
+    padding-top: 1em;
+    border-radius: 2em;
 }
 
-br{
-    margin-top:3em;
+.submit_button{
+    background-color: rgb(52, 179, 52);
+    padding: 0.5em 1em;
+    border-radius: 1em;
 }
-input:last-child{
-    float:right;
-    margin-top:5em;
-    margin-left:5em;
+
+input{
+    width: 30em;
+    
 }
-form label{
-    margin-top:3em;
+  
+@media screen and (max-width:550px){
+    input{
+        width: 25em;
+        
+    }
+}
+
+@media screen and (max-width:489px){
+    input{
+        width: 20em;
+        
+    }
+}
+
+@media screen and (max-width:428px){
+    input{
+        width: 15em;
+        
+    }
 }

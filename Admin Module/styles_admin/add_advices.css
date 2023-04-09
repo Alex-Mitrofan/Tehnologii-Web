@@ -1,8 +1,8 @@
-nav ul li:nth-child(3){
+nav ul li:nth-child(1){
     border-bottom: 0.2em solid rgb(181, 209, 224);
 }
 
-nav ul li:nth-child(3) a{
+nav ul li:nth-child(1) a{
     color: white;
 }
 
@@ -35,6 +35,12 @@ form{
     padding-bottom: 0.5em;
 }
 
+#new_advice{
+    width: 20em;
+    height: 2.1em;
+    font-size: 1.2em;
+}
+ 
 @media screen and (max-width: 690px){
     form{
         margin-left: 1em;

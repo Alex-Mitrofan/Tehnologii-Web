@@ -71,7 +71,7 @@ header {
 
 .avatar {
     border-radius: 50%;
-    background-image: url("../Manners Matter/images/avatar.png");
+    background-image: url("../../Manners Matter/images/avatar.png");
     width: 3.5em; 
     height: 3.5em;
     vertical-align: middle; 
@@ -245,9 +245,7 @@ section{
         padding-right: 0;
         font-size: 0.9em;
     }
-    nav ul li:nth-child(1){
-        display:none;
-    }
+ 
 
 }
 
@@ -259,9 +257,7 @@ section{
         font-size: 0.9em;
     }
 
-    nav ul li:nth-child(2){
-        display:none;
-    }
+ 
 
     .logo{
         font-size: 2em;
