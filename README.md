@@ -1,7 +1,21 @@
 # Manners Matter
 made by: Mitrofan Alexandru, Ciocan Alexandru <br/>
-Mitrofan Alexandru:
-Ciocan Alexandru: 
+<br/>
+Mitrofan Alexandru: <br/>
+-Articles 1,2,5 from index.html;<br/>
+-Login and Register;<br/>
+-Profile;<br/>
+-Advices;<br/>
+-Contact;<br/>
+<br/>
+Ciocan Alexandru: <br/>
+-Articles 3,4 from index.html;
+-Challange;<br/>
+-quizzes;<br/>
+-Rank;<br/>
+-Administrative module;<br/>
+-About;<br/>
+<br/>
 
 Table of Contents
 =================
