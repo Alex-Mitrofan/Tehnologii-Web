@@ -12,6 +12,11 @@ nav ul li:nth-child(7) a{
     padding-left:3em;
 }
 
+.email_box{
+    margin-bottom: 2em;
+    width: 20em;
+}
+
 .input_box{
     width:45em;
     height:10em;
