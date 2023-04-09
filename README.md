@@ -12,7 +12,6 @@ Table of Contents
     * 2.1 [Product Perspective](#21-product-perspective)
     * 2.2 [Product Functions](#22-product-functions)
     * 2.3 [User Classes and Characteristics](#23-user-classes-and-characteristics)
-   constraints)
   * [External Interface Requirements](#external-interface-requirements)
     * 3.1 [User Interfaces](#31-user-interfaces)
     * 3.2 [Hardware Interfaces](#32-hardware-interfaces)
@@ -88,15 +87,28 @@ The most important users are those who create an account.
  
 ## External Interface Requirements
 ### 3.1 User Interfaces
+
+The home page (index.html) is the page that contains previews of all articles.<br />
+The menu lights up depending on the page the user is on to facilitate page navigation.<br />
+In the header, if the user hovers over the profile picture, a menu with 2 links opens, one that leads to his profile and the other that is a logout button.<br />
+On the Home page, each article title is a link that leads to a separate html page with the entire article.<br />
+The Profile page presents an "Edit" button that allows the user to edit his data, when pressed, text input fields will appear and a "Save" button will appear to save the changes.<br />
+On the Advice page there is a form with radio buttons and a submit button. When the user chooses his preferred features from the form the list of tips will be filtered according to his choices.<br />
+
 Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed. Details of the user interface design should be documented in a separate user interface specification.
+
 ### 3.2 Hardware Interfaces
 Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
+
 ### 3.3 Software Interfaces
 Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Refer to documents that describe detailed application programming interface protocols. Identify data that will be shared across software components. If the data sharing mechanism must be implemented in a specific way (for example, use of a global data area in a multitasking operating system), specify this as an implementation constraint.
+
 ### 3.4 Communications Interfaces
 Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on. Define any pertinent message formatting. Identify any communication standards that will be used, such as FTP or HTTP. Specify any communication security or encryption issues, data transfer rates, and synchronization mechanisms.
+
 ## System Features
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
+
 ### 4.1 System Feature 1
 Don’t really say “System Feature 1.” State the feature name in just a few words.
 4.1.1   Description and Priority
