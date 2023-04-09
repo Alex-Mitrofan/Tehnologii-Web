@@ -17,8 +17,8 @@ Table of Contents
     * 3.2 [Software Interfaces](#32-software-interfaces)
     * 3.3 [Communications Interfaces](#33-communications-interfaces)
   * [System Features](#system-features)
-    * 4.1 [Register, login and logout](#41-system-feature-1)
-    * 4.2 [System Feature 2 (and so on)](#42-system-feature-2-and-so-on)
+    * 4.1 [Register, login and logout](#41-register,-login-and-logout)
+    * 4.2 [View Profile](#42-view-profile)
  
 
 
@@ -134,7 +134,25 @@ risk     -> 3<br />
  
 
 
-### 4.2 System Feature 2 (and so on)
+### 4.2 View Profile
+### 4.1.1   Description and Priority
+
+This feature allows user to visualise his profile that contains following information: a profile picture, username, name, location, score, rank, age, ocupation. The user can edit his profile. This feature has a low priority because the user can have an account even if he doesn't add details to his profile. The benefit of this feature is that it keeps the user engaged. The cost is that requires a database. The risk is that the user won't use the feature to much. />
+<br />
+priority -> low<br />
+benefit  -> 5<br />
+cost     -> 4<br />
+risk     -> 5<br />
+
+### 4.1.2   Stimulus/Response Sequences
+-User press "Profile" buttons from nav menu or user press "My Profile" button from dropdown menu hovered from profile picture from header;<br />
+-User is redirected to Profile.html;<br />
+-User press "Edit" button to add a profile picture or update his information;<br />
+-User press "Save" button to save changes;
+
+### 4.1.3   Functional Requirements
+The Profile.html page can be acces only if the user is logged in. Otherwise he will be redirected to Login.html.
+
 
  
   
