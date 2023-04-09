@@ -1,5 +1,7 @@
 # Manners Matter
-made by: Mitrofan Alexandru, Ciocan Alexandru
+made by: Mitrofan Alexandru, Ciocan Alexandru <br/>
+Mitrofan Alexandru:
+Ciocan Alexandru: 
 
 Table of Contents
 =================
@@ -42,7 +44,8 @@ The role of this web application is to provide users with information about mann
 The application has a section with the ranking of the best users, its purpose being to motivate them to put into practice the information learned through the tests in the related section.
 
 ### 1.4 References
-List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
+Here is a diagram in figma with the functionalities of the Manners Matter website and the administrative module.<br/>
+https://www.figma.com/file/2cJVIJ6ku0oD69fC9lEOOG/Manner-Matter-Teh-Web?node-id=0%3A1&t=wRPjlI6jsy2qQtMC-1
 
 ## Overall Description
 ### 2.1 Product Perspective
