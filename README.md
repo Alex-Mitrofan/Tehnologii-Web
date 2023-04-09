@@ -17,9 +17,14 @@ Table of Contents
     * 3.2 [Software Interfaces](#32-software-interfaces)
     * 3.3 [Communications Interfaces](#33-communications-interfaces)
   * [System Features](#system-features)
-    * 4.1 [Register, login and logout](#41-register,-login-and-logout)
+    * 4.1 [Register, login and logout](#41-register-login-and-logout)
     * 4.2 [View Profile](#42-view-profile)
- 
+    * 4.3 [Get Advices](#43-get-advices)
+    * 4.4 [Challange](#44-challange)
+    * 4.5 [About and Contact](#45-about-and-contact)
+    * 4.6 [Articles](#46-articles)
+    * 4.7 [Administrative Module](#47-administrative-module)
+    
 
 
 
@@ -114,7 +119,7 @@ risk     -> 3<br />
 
   
 ### 4.1.2   Stimulus/Response Sequences
--User press on login link.<br />
+-User presses on login link.<br />
 -If he does not have an account, he will press the register button.<br />
 -Here you will enter your username, name, password, password x2.<br />
 -After submitting, he will be redirected to Home.<br />
@@ -135,24 +140,119 @@ risk     -> 3<br />
 
 
 ### 4.2 View Profile
-### 4.1.1   Description and Priority
+### 4.2.1   Description and Priority
 
-This feature allows user to visualise his profile that contains following information: a profile picture, username, name, location, score, rank, age, ocupation. The user can edit his profile. This feature has a low priority because the user can have an account even if he doesn't add details to his profile. The benefit of this feature is that it keeps the user engaged. The cost is that requires a database. The risk is that the user won't use the feature to much. />
+This feature allows user to visualise his profile that contains following information: a profile picture, username, name, location, score, rank, age, ocupation. The user can edit his profile. This feature has a low priority because the user can have an account even if he doesn't add details to his profile. The benefit of this feature is that it keeps the user engaged. The cost is that requires a database. The risk is that the user won't use the feature to much. <br />
 <br />
 priority -> low<br />
 benefit  -> 5<br />
 cost     -> 4<br />
 risk     -> 5<br />
 
-### 4.1.2   Stimulus/Response Sequences
+### 4.2.2   Stimulus/Response Sequences
 -User press "Profile" buttons from nav menu or user press "My Profile" button from dropdown menu hovered from profile picture from header;<br />
 -User is redirected to Profile.html;<br />
--User press "Edit" button to add a profile picture or update his information;<br />
--User press "Save" button to save changes;
+-User presses "Edit" button to add a profile picture or update his information;<br />
+-User presses "Save" button to save changes;
 
 ### 4.1.3   Functional Requirements
 The Profile.html page can be acces only if the user is logged in. Otherwise he will be redirected to Login.html.
 
 
+### 4.3 Get Advices
+### 4.3.1   Description and Priority
+This feature allows user to visualise all advices available on the website or to filter the advices according to his preferences. This feature has a high priority because it gives to the user useful information. The benefit is that user will be more intersted in this website. The cost is that it requires a database with advices. <br />
+<br />
+priority -> high<br />
+benefit  -> 10<br />
+cost     -> 4<br />
+risk     -> 2<br />
+
+### 4.3.2   Stimulus/Response Sequences
+-User press "Advices" button from menu;<br />
+-He is redirected to Advices.html;<br />
+-User completes his prefferences from the form;<br />
+-User presses "Submit" button;<br />
+-Advices are filtered by the website.
+
+
+
+### 4.4 Challenge
+### 4.4.1   Description and Priority
+This feature allows user to take a test with different level of difficulties and to gain points. The priority is high because it engages the user. The cost is that it requires a database for questions. The risk is low because the user may not use this feature.<br />
+<br />
+priority -> high<br />
+benefit  -> 8<br />
+cost     -> 5<br />
+risk     -> 4<br />
+
+### 4.4.2   Stimulus/Response Sequences
+-User presses "Challenge" button from menu;<br />
+-He is redirected to Challenge.html;<br />
+-User selects test's difficulty from the form;<br />
+-User presses "Start" button;<br />
+-The website redirects user to Quiz page;<br />
+-User selects the correct answer;<br />
+-User presses "next question" button;<br />
+-The website shows the next questions;<br />
+-The website shows the score user obtained;<br />
+-User is redirected to Home.html;
+
+
+### 4.5 About and Contact
+
+### 4.5.1   Description and Priority
+This feature allows user to se information about website on "About.html" and to ask a question or give feedback in "Contact.html". The priority is low. The benefit is that user can be helped if he needs something and asks on contact form. The cost is that this type of communication requires a special page on administrative module. The risk is that the user won't use this feature.<br />
+<br />
+priority -> low<br />
+benefit  -> 2<br />
+cost     -> 6<br />
+risk     -> 8<br />
+
  
+### 4.5.2   Stimulus/Response Sequences
+-User presses "About" button from menu;<br />
+-User reads information about the website;<br />
+-User presses "Contact" button from menu;<br />
+-User types his message on form;<br />
+-User types his email address on form;<br />
+-The website redirects message and email to administrative module;<br />
+-Admin responds user using email;<br />
   
+### 4.5.3   Functional Requirements
+Contact feature can be used only if the user completes the form with his email address.
+
+
+
+### 4.6 Articles
+### 4.6.1   Description and Priority
+This features is composed by pages index.html and articles. On index.html there are previews for every article. Every preview contains a href title that redirects to article's page. The benefit and priority are high. The cost is that the feature requires a database with articles and it requires active admins that add new articles to keep users engaged.<br />
+<br />
+priority -> high<br />
+benefit  -> 10<br />
+cost     -> 7<br />
+risk     -> 1<br />
+
+### 4.6.2   Stimulus/Response Sequences
+
+-User presses "Home" button from menu or the logo from header;<br />
+-User reads the previews of articles;<br />
+-User presses on article's title;<br />
+-The website redirects user to article's specific page;<br />
+-User reads entire article;<br />
+
+
+### 4.7 Administrative Module
+### 4.7.1   Description and Priority
+This feature allows admins to add previews for articles, articles, questions, advices, read feedback. The priority is high. The benefit is that is keeps users engaged because they will have more content. The cost is high because this feature suppose active admins that add new content. The risk is high becasue it requires active admins.<br />
+<br />
+priority -> high<br />
+benefit  -> 10<br />
+cost     -> 8<br />
+risk     -> 8<br />
+
+### 4.7.2   Stimulus/Response Sequences
+-Admin selects page where he wants to add content (Add article, Add advice, Add Question) or read feedback
+
+
+
