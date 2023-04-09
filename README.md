@@ -1,22 +1,18 @@
 # Manners Matter
 made by: Mitrofan Alexandru, Ciocan Alexandru
-April 2023
 
 Table of Contents
 =================
   * [Introduction](#1-introduction)
     * 1.1 [Purpose](#11-purpose)
-    * 1.2 [Intended Audience and Reading Suggestions](#13-intended-audience-and-reading-suggestions)
-    * 1.3 [Product Scope](#14-product-scope)
-    * 1.4 [References](#15-references)
+    * 1.2 [Intended Audience and Reading Suggestions](#12-intended-audience-and-reading-suggestions)
+    * 1.3 [Product Scope](#13-product-scope)
+    * 1.4 [References](#14-references)
   * [Overall Description](#overall-description)
     * 2.1 [Product Perspective](#21-product-perspective)
     * 2.2 [Product Functions](#22-product-functions)
     * 2.3 [User Classes and Characteristics](#23-user-classes-and-characteristics)
-    * 2.4 [Operating Environment](#24-operating-environment)
-    * 2.5 [Design and Implementation Constraints](#25-design-and-implementation-constraints)
-    * 2.6 [User Documentation](#26-user-documentation)
-    * 2.7 [Assumptions and Dependencies](#27-assumptions-and-dependencies)
+   constraints)
   * [External Interface Requirements](#external-interface-requirements)
     * 3.1 [User Interfaces](#31-user-interfaces)
     * 3.2 [Hardware Interfaces](#32-hardware-interfaces)
@@ -57,19 +53,39 @@ List any other documents or Web addresses to which this SRS refers. These may in
 
 ## Overall Description
 ### 2.1 Product Perspective
-Describe the context and origin of the product being specified in this SRS. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the SRS defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful.
+
+The application is self-contained. It has two components: the administrative one and the component intended for users.
+
+
 ### 2.2 Product Functions
-Summarize the major functions the product must perform or must let the user perform. Details will be provided in Section 3, so only a high level summary (such as a bullet list) is needed here. Organize the functions to make them understandable to any reader of the SRS. A picture of the major groups of related requirements and how they relate, such as a top level data flow diagram or object class diagram, is often effective.
+
+Functions of the user component that a user can perform: <br />
+-register and login; <br />
+-edit profile; <br />
+-acces articles; <br />
+-get personalized advices; <br />
+-sustain tests; <br />
+-see a scoreboard; <br />
+-give feedback to admins. <br />
+ <br />
+Functions that an admin can perform on administrative module: <br />
+-add new articles; <br />
+-receive feedback/questions from users; <br />
+-add new advices; <br />
+-add new questions for tests. <br />
+
+
 ### 2.3 User Classes and Characteristics
-Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.
-### 2.4 Operating Environment
-Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.
-### 2.5 Design and Implementation Constraints
-Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).
-### 2.6 User Documentation
-List the user documentation components (such as user manuals, on-line help, and tutorials) that will be delivered along with the software. Identify any known user documentation delivery formats or standards.
-### 2.7 Assumptions and Dependencies
-List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).
+Types of users:<br />
+-users without an account can acces informations, get personalized advices, sustain test. They can't have a profile and can't get points for their tests.<br />
+-users with an account can additionaly view their profile, keep track of their score and rank and appear on the leaderboard;<br />
+-admins can add new articles, new advices, new questions for tests and receive feedback from users.<br />
+<br />
+
+Usual users are those who want to find more about manners on the internet. They can use this app as long as admins add new articles to read, new advices and new questions for tests in order to keep users engaged.<br />
+The most important users are those who create an account.
+
+ 
 ## External Interface Requirements
 ### 3.1 User Interfaces
 Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed. Details of the user interface design should be documented in a separate user interface specification.
