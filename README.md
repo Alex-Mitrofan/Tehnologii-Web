@@ -1,22 +1,14 @@
-# IEEE-Tempate
-IEEE System Requirements Specification Template
-
-# Software Requirements Specification
-## For  <project name>
-Version 1.0 approved
-Prepared by <author>
-<organization>
-<date created>
+# Manners Matter
+made by: Mitrofan Alexandru, Ciocan Alexandru
+April 2023
 
 Table of Contents
 =================
-  * [Revision History](#revision-history)
   * [Introduction](#1-introduction)
     * 1.1 [Purpose](#11-purpose)
-    * 1.2 [Document Conventions](#12-document-conventions)
-    * 1.3 [Intended Audience and Reading Suggestions](#13-intended-audience-and-reading-suggestions)
-    * 1.4 [Product Scope](#14-product-scope)
-    * 1.5 [References](#15-references)
+    * 1.2 [Intended Audience and Reading Suggestions](#13-intended-audience-and-reading-suggestions)
+    * 1.3 [Product Scope](#14-product-scope)
+    * 1.4 [References](#15-references)
   * [Overall Description](#overall-description)
     * 2.1 [Product Perspective](#21-product-perspective)
     * 2.2 [Product Functions](#22-product-functions)
@@ -47,24 +39,20 @@ Table of Contents
 
 
 
-## Revision History
-| Name | Date    | Reason For Changes  | Version   |
-| ---- | ------- | ------------------- | --------- |
-|      |         |                     |           |
-|      |         |                     |           |
-|      |         |                     |           |
 
 ## 1. Introduction
 ### 1.1 Purpose 
-Identify the product whose software requirements are specified in this document, including the revision or release number. Describe the scope of the product that is covered by this SRS, particularly if this SRS describes only part of the system or a single subsystem.
+This document describes the website named Manners Matter. The purpose of the documentation is to present the way the application runs, the architecture of the application and its characteristics.
 
-### 1.2 Document Conventions
-Describe any standards or typographical conventions that were followed when writing this SRS, such as fonts or highlighting that have special significance. For example, state whether priorities  for higher-level requirements are assumed to be inherited by detailed requirements, or whether every requirement statement is to have its own priority.
-### 1.3 Intended Audience and Reading Suggestions
-Describe the different types of reader that the document is intended for, such as developers, project managers, marketing staff, users, testers, and documentation writers. Describe what the rest of this SRS contains and how it is organized. Suggest a sequence for reading the document, beginning with the overview sections and proceeding through the sections that are most pertinent to each reader type.
-### 1.4 Product Scope
-Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.
-### 1.5 References
+### 1.2 Intended Audience and Reading Suggestions
+The audience is anyone who wants to use the application. Next, the documentation presents the way the application works, software specifications and its architecture. 
+Section 2 covers aspects related to the mode of operation and is suitable for regular users. The other sections cover advanced aspects and are intended for developers.
+
+### 1.3 Product Scope
+The role of this web application is to provide users with information about manners in the online environment, to offer them personalized advice based on their needs and to test their knowledge gained from reading the informative materials provided.
+The application has a section with the ranking of the best users, its purpose being to motivate them to put into practice the information learned through the tests in the related section.
+
+### 1.4 References
 List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
 
 ## Overall Description
