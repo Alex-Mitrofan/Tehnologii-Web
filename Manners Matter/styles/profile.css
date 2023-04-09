@@ -49,8 +49,15 @@
 
 .profile_elements ul li {
     padding: 1em;
-    font-size: 1em;
-     
+    font-size: 1em;   
+}
+
+.export{
+    font-size:1.2em;
+    height: 2em;
+    margin-left: 0.5em;
+    width: 7em;
+    margin-bottom: 2em;
     
 }
 
