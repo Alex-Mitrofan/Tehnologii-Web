@@ -75,7 +75,6 @@ a:visited{
 form{
     display: flex;
     flex-direction: column;
-    float:center;
     padding-left:3.5em;
 }
 label:first-child{
