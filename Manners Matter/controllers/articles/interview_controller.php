@@ -1,5 +1,5 @@
 <?php
 
-require '../../views/articles/interview.html';
+require '../views/articles/interview.html';
 
 ?>

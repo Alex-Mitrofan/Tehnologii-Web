@@ -1,5 +1,5 @@
 <?php
 
-require '../../views/articles/emoji.html';
+require '../views/articles/emoji.html';
 
 ?>

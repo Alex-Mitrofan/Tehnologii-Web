@@ -1,5 +1,5 @@
 <?php
 
-require '../../views/quiz/q1.html';
+require '../views/quiz/q1.html';
 
 ?>

@@ -1,5 +1,5 @@
 <?php
 
-require '../../views/articles/video_conference.html';
+require '../views/articles/video_conference.html';
 
 ?>

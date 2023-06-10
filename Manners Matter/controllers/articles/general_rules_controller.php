@@ -1,5 +1,5 @@
 <?php
 
-require '../../views/articles/general_rules.html';
+require '../views/articles/general_rules.html';
 
 ?>

@@ -1,5 +1,5 @@
 <?php
 
-require '../../views/articles/email.html';
+require '../views/articles/email.html';
 
 ?>
