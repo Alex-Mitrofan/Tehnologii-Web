@@ -71,7 +71,7 @@ header {
 
 .avatar {
     border-radius: 50%;
-    background-image: url("../../Manners Matter/images/avatar.png");
+    background-image: url("../../../Manners Matter/views/images/avatar.png");
     width: 3.5em; 
     height: 3.5em;
     vertical-align: middle; 
