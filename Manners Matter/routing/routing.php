@@ -19,7 +19,10 @@ elseif (in_array("Login", $arr))
 elseif (in_array("Profile", $arr))
     require '../controllers/profile_controller.php';
 elseif (in_array("Ranking", $arr))
-    require '../controllers/ranking_controller.php';
+    {
+     $_GET["id"]=1;
+     require '../controllers/ranking_controller.php';
+    }
 elseif (in_array("Register", $arr))
     require '../controllers/register_controller.php';
 #ARTICLES
@@ -38,8 +41,17 @@ elseif (in_array("Video%20Conference", $arr))
 
 elseif (in_array("Quiz", $arr))
     require '../controllers/quiz/q1_controller.php';
+## PAGINATION RANK
+elseif (is_numeric(strstr($arr[count($arr)-1],"id")[-1])==True && str_contains($arr[count($arr)-1],"Ranking")==True)
+    {
+      require '../controllers/ranking_controller.php';
+      $_GET["id"]=(int)strstr($arr[count($arr)-1],"id")[-1];
+    }
+else 
+ echo "Wrong Adress";
 
-else
-    echo "Wrong Address"
+
+
+
 
 ?>

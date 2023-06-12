@@ -71,26 +71,38 @@
             <div class="podium_image">
               <div id="container-places"> 
                 <div class="second-place">
-                 <div class="second_place_image"> 
+                  <?php 
+                  echo '<div class="second_place_image" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($best_of_3[2]["profile_image"]) . '\');">';
+                  ?>
                 </div>
                 <p style="margin-top: -0.2em; margin-right: 1.2em;">
-                  Ben10
+                  <?php
+                   echo $best_of_3[2]["username"] ;
+                  ?>
                 </p>
                 </div>
   
                 <div class="first-place">
-                  <div class="first_place_image">
-
+                  <?php 
+                  echo '<div class="first_place_image" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($best_of_3[1]["profile_image"]) . '\');">';
+                  ?>
                   </div>
-                  <p style="margin-right:4em ;">Ben10</p>
+                  <p style="margin-right:4em ;">
+                  <?php
+                    echo $best_of_3[1]["username"] ;
+                   ?>
+                  </p>
                 </div>
   
                 <div class="third-place">
-                  <div class="third_place_image">
-
+                    <?php 
+                    echo '<div class="third_place_image" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($best_of_3[3]["profile_image"]) . '\');">';
+                    ?>
                   </div>
                 <p style="margin-right: 5em;">
-                  Ben10
+                  <?php
+                  echo $best_of_3[3]["username"] ;
+                  ?>
                 </p> 
                 </div>
               </div>
@@ -108,53 +120,27 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td><img src="./views/images/profile_pic.jpg" alt="Nr1-tabel"> Ion</td>
-                <td>235xp</td>
-                <td>Gentelman</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td><img src="./views/images/profile_pic.jpg" alt="Nr1-tabel"> Gigel</td>
-                <td>235xp</td>
-                <td>Gentelman</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td><img src="./views/images/profile_pic.jpg" alt="Nr1-tabel"> Mirel</td>
-                <td>235xp</td>
-                <td>Gentelman</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td><img src="./views/images/profile_pic.jpg" alt="Nr1-tabel"> Becali</td>
-                <td>235xp</td>
-                <td>Gentelman</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td><img src="./views/images/profile_pic.jpg" alt="Nr1-tabel"> Marcel</td>
-                <td>0px</td>
-                <td>Gentelman</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td><img src="./views/images/profile_pic.jpg" alt="Nr1-tabel"> Creanga</td>
-                <td>100px</td>
-                <td>Gentelman</td>
-              </tr>
+              <?php 
+              foreach ($page_info as $key => $info) {
+                  $content="";
+                  $content .= "<td>" . $key . "</td>";
+                  $content .= '<td><img src="data:image/jpeg;base64,' . base64_encode($info["profile_image"]) . '"/>' . $info["username"] . '</td>';
+                  $content .= "<td>" . $info['score'] . "</td>";
+                  $content .= "<td>" . $info['rank'] . "</td>";
+                  echo "<tr>".$content."</tr>";   
+              }
+            ?>
             </tbody>
            </table>
           </div>
           <div class="pagination">
             <div>&lt;</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
+            <div><a href="Ranking?id=1">1</a></div>
+            <div><a href="Ranking?id=2">2</a></div>
+            <div><a href="Ranking?id=3">3</a></div>
+            <div><a href="Ranking?id=4">4</a></div>
+            <div><a href="Ranking?id=5">5</a></div>
+            <div><a href="Ranking?id=6">6</a></div>
             <div>&gt;</div>
           </div>
           </section>
