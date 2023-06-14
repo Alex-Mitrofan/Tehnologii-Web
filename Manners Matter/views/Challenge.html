@@ -83,17 +83,17 @@
 
 
             <div class="info-challenge">
-            <form>
-            <input type="radio" id="Practice" name="Difficulty">
+            <form action="Quiz", method="POST">
+            <input type="radio" id="Practice" name="Difficulty" value="Practice" checked>
             <label for="Practice">Practice</label>
-            <input type="radio" id="Easy" name="Difficulty">
+            <input type="radio" id="Easy" name="Difficulty" value="Easy">
             <label for="Easy"> Easy </label>   
-            <input type="radio" id="Medium" name="Difficulty">
+            <input type="radio" id="Medium" name="Difficulty" value="Medium">
             <label for="Medium"> Medium </label>
-            <input type="radio" id="Hard" name="Difficulty">
+            <input type="radio" id="Hard" name="Difficulty" value="Hard">
             <label for="Hard"> Hard </label>  
             <span>
-              <input class="start_button" type="button" value="Start" onclick="location.href='Quiz';" style="width: 10em;">              
+              <input class="start_button" type="submit" value="Start" onclick="location.href='Quiz';" style="width: 10em;">              
 
             </span>
             </form>
