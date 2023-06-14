@@ -1,6 +1,6 @@
 <?php
 
-
+ 
 $arr = explode("/", $_SERVER['REQUEST_URI'] );
 
 
@@ -25,6 +25,7 @@ elseif (in_array("Ranking", $arr))
     }
 elseif (in_array("Register", $arr))
     require '../controllers/register_controller.php';
+
 #ARTICLES
 elseif (in_array("Email", $arr))
     require '../controllers/articles/email_controller.php';

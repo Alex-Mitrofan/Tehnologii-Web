@@ -1,3 +1,21 @@
+<?php
+  $username = false;  
+ 
+  if (isset($_COOKIE['wrong_username'])) {
+    if($_COOKIE["wrong_username"] == 'True')
+      $username = true;  
+  }
+
+  $password = false;  
+ 
+  if (isset($_COOKIE['wrong_password'])) {
+    if($_COOKIE["wrong_password"] == 'True')
+      $password = true;  
+  }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,6 +51,7 @@
       </div>
 
   </header>
+  <main>
   <nav>
     <ul>
       <li>
@@ -63,34 +82,44 @@
         <div class="div_articles">
             <div class="signin_box">
                 <h1>Register</h1>
-                <form method="post">
+                <form method="post" action="Register">
+                    <?php if ($username) : ?>
+                      <div>
+                          <p style="color: red;">Username already used. Try another one!</p>
+                      </div>
+                    <?php endif; ?>
                     <div class="field">
                         <label>Username</label>
-                        <input type="text" required >
+                        <input id="username" name="username" type="text" required >
     
                     </div>
                     <div class="field">
                         <label>Password</label>
-                        <input type="password" required >
+                        <input id="password" name="password" type="password" required >
     
                     </div>
                     <div class="field">
                         <label>Repeat your password</label>
-                        <input type="password" required >
+                        <input id="repeat_password" name="repeat_password" type="password" required >
     
                     </div>
                     <div class="field">
                         <label>First name</label>
-                        <input type="text">
+                        <input id="first_name" name="first_name" type="text">
     
                     </div>
                     <div class="field">
                         <label>Last name</label>
-                        <input type="text">
+                        <input id="last_name" name="last_name" type="text">
     
                     </div>
                      
-                    <input type="submit" value="Register" >
+                    <input id="submit" name="submit" type="submit" value="Register" >
+                    <?php if ($password) : ?>
+                      <div>
+                          <p style="color: red;">Wrong password!</p>
+                      </div>
+                    <?php endif; ?>
     
                 </form>
             </div>
