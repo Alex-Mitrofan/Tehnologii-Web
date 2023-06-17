@@ -1,9 +1,10 @@
 <?php
   $username = false;  
- 
+   
   if (isset($_COOKIE['wrong_username'])) {
     if($_COOKIE["wrong_username"] == 'True')
       $username = true;  
+      
   }
 
   $password = false;  
