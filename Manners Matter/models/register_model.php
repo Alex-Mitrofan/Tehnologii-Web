@@ -14,13 +14,13 @@ function username_already_used($username){
 
  
  
-function register(){
+function register($username, $password, $last_name){
     global $con;
  
     $sql = "INSERT INTO `users`(`username`, `password`, `name`, `score`) VALUES ('"
-    . $_POST['username'] . "', '"
-    . $_POST['password'] . "', '"
-    . $_POST['last_name'] . "', 0)";
+    . $username . "', '"
+    . $password . "', '"
+    . $last_name . "', 0)";
 
     $result = mysqli_query($con, $sql);
 
