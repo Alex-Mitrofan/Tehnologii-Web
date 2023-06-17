@@ -1,9 +1,10 @@
 <?php
   $username = false;  
- 
+   
   if (isset($_COOKIE['wrong_username'])) {
     if($_COOKIE["wrong_username"] == 'True')
       $username = true;  
+      
   }
 
   $password = false;  
@@ -45,7 +46,7 @@
 
           <div class="dropdown_content">
             <a href="Profile">My Profile</a>
-            <a href="Login">Logout</a>
+            <a href="Logout">Logout</a>
           </div>
         </div>
       </div>

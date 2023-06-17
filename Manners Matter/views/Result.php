@@ -27,7 +27,7 @@
 
             <div class="dropdown_content">
               <a href="Profile">My Profile</a>
-              <a href="Login">Logout</a>
+              <a href="Logout">Logout</a>
             </div>
           </div>
         </div>

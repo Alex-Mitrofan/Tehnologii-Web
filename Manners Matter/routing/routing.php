@@ -25,6 +25,8 @@ elseif (in_array("Ranking", $arr))
     }
 elseif (in_array("Register", $arr))
     require '../controllers/register_controller.php';
+elseif (in_array("Logout", $arr))
+    require '../controllers/logout_controller.php';
 
 #ARTICLES
 elseif (in_array("Email", $arr))
