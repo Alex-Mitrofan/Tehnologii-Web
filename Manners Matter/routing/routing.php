@@ -41,7 +41,9 @@ elseif (in_array("Video%20Conference", $arr))
 #QUIZ
 
 elseif (in_array("Quiz", $arr))
-    require '../controllers/quiz/q1_controller.php';
+    require '../controllers/quiz/quiz_controller.php';
+elseif (in_array("Result",$arr))
+    require '../controllers/result_controller.php';
 ## PAGINATION RANK
 elseif (is_numeric(strstr($arr[count($arr)-1],"id")[-1])==True && str_contains($arr[count($arr)-1],"Ranking")==True)
     {

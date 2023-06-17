@@ -62,35 +62,34 @@
       
         
         <div class="div_articles">
-          <section>
-           <h1>Question 1</h1>
-           <p class="question">Emoji are a good method of communication, but when exactly?</p>
-           <form>
-             <label for="q1_1">
-                <input type="radio"  id='q1_1' name="q1">
-                Semi-Formal Communication
-             </label>
-             <label for="q1_2">
-                <input type="radio" id="q1_2" name="q1">           
-                Social Media
-            </label>
-             <label for="q1_3">
-                <input type="radio" id="q1_3" name="q1">
-                Clients and Customers
-             </label>
-             <label for="q1_4">
-                <input type="radio" id="q1_4" name="q1">
-                Communicating With Your Boss
-             </label>
-             <div>
-                <div>
-                <input class="next-question" type="button" Value="Next Question" onclick="location.href='../../controllers/quiz/q2_controller.php';">
-                </div>
-                <div>
-                <p class="current-question">Question 1/5</p>
-                </div>
-                </div>
-           </form>
+          <section>  
+            <?php
+            $intrebare='<form method="POST" action="Result">';
+            for ($i=1;$i<=count($questions);$i++)
+            {
+              $intrebare.='<h1>'.'Question '.$i.'</h1>';
+              $intrebare.='<p class="question">'.$questions[$i]["question"].'</p>';
+              $permutation=permutation_question($questions[$i]);
+              $k=1;
+              foreach ($permutation as $key=>$values)
+              {
+
+                if ($key=='good_answer'|| $key=='bad_answer1'|| $key=='bad_answer2'||$key=='bad_answer3')
+                  {
+                  $intrebare.='<label for="q'.$i.'_'.$k.'">';
+                  $intrebare.='<input type="radio" id="q'.$i.'_'.$k.'"name="q'.$i.'"value="'.$key.'">';
+                  $intrebare.=$values;
+                  $intrebare.='</label>';
+                  }
+                  $k++;
+              }
+              
+            }
+            $intrebare .= '<button type="submit" style="background-color: #4CAF50; color: white; padding: 16px 24px; border: none; border-radius: 4px; cursor: pointer; display: inline-block; width: 100px;">Submit</button>';
+            $intrebare.='</form>';
+            
+            echo $intrebare;
+            ?>
           </section>
           </div>
 
