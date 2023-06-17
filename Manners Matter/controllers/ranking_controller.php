@@ -6,5 +6,5 @@ if (isset($_GET["id"]))
   $best_of_3=get_first_three_users();
   $_GET["id"]=null;
 }
-require '../views/ranking.html';
+require '../views/ranking.php';
 ?>

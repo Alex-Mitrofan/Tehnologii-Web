@@ -3,7 +3,7 @@ main {
     /*background-image: url("../images/quiz_background.png");*/
     /*background-size: cover;*/
     background-image:linear-gradient(90deg,rgb(16, 17, 16), rgb(153, 167, 191), rgb(138, 138, 113));
-    height: 100%;
+    height: 200%;
 }
 
 
