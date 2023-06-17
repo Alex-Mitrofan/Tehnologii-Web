@@ -63,6 +63,23 @@
         
         <div class="div_articles">
           <section>  
+            <?php
+            echo '<div style="text-align: center;">';
+            echo '<h2>Performance</h2>';
+            echo '<p> Difficulty mode: '.$info['mode'];
+            echo "<p>Good answers: $nr_corect_answerd";
+            echo "<p>Wrong answers:".(5-$nr_corect_answerd);
+            echo '<p>Old Score: ' . $info['old_score'] . '</p>';
+            echo '<p>New Score: ' . $info['new_score'] . '</p>';
+            echo '<p>Old Rank: ' . $info['old_rank'] . '</p>';
+            echo '<p>Username: ' . $info['username'] . '</p>';
+            echo '</div>';
+            
+            // Back to home button
+            echo '<div style="text-align: center; margin-top: 20px;">';
+            echo '<a href="Home" style="background-color: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 4px; text-decoration: none;">Back to Home Page</a>';
+            echo '</div>';
+            ?>
           </section>
           </div>
 

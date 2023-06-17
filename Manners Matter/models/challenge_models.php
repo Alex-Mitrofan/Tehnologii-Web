@@ -8,14 +8,52 @@ $conn=new mysqli(
 if (mysqli_connect_errno()) {
     die ('Eror connection database challenge_model...');
 }
-function get_score_and_set($score,$name_user)
+function get_score_and_set($score, $name_user,$dificulty)
 {
     global $conn;
-    if (!($qer=mysqli_query($conn,'select * from questions where lower(dificulty)=\''..'\' order by rand() limit 5')))
-    {
-        die("Eror query challenge_model.php");
+    if ($dificulty!='Practice')
+
+    {// Selectează utilizatorul cu numele de utilizator specificat
+    $query = "SELECT * FROM users WHERE username = '" . mysqli_real_escape_string($conn, $name_user) . "'";
+    $qer = mysqli_query($conn, $query);
+    if (!$qer) {
+        die("Error in query: " . mysqli_error($conn));
     }
-  
+    $rez = $qer->fetch_assoc();
+
+    // Actualizează scorul utilizatorului
+    $new_score = (int) $rez['score'] + (int) $score;
+    $update_query = "UPDATE users SET score = " . $new_score . " WHERE username = '" . mysqli_real_escape_string($conn, $name_user) . "'";
+    $update_result = mysqli_query($conn, $update_query);
+    if (!$update_result) {
+        die("Error in query: " . mysqli_error($conn));
+    }
+
+    // Construiește un array cu informațiile actualizate
+    $info = array();
+    $info['old_score'] = $rez['score'];
+    $info['new_score'] = $new_score;
+    $info['old_rank'] = $rez['rank'];
+    $info['username'] = $rez['username'];
+    $info['mode']=$dificulty;
+   }
+   else
+   {
+    $query = "SELECT * FROM users WHERE username = '" . mysqli_real_escape_string($conn, $name_user) . "'";
+    $qer = mysqli_query($conn, $query);
+    if (!$qer) {
+        die("Error in query: " . mysqli_error($conn));
+    }
+    $rez = $qer->fetch_assoc();
+    $info = array();
+    $info['old_score'] = $rez['score'];
+    $info['new_score'] = $rez['score'];
+    $info['old_rank'] = $rez['rank'];
+    $info['username'] = $rez['username'];
+    $info['mode']=$dificulty;
+   }
+
+    return $info;
 }
 function permutation_question($question)
 {

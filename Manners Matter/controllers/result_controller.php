@@ -7,6 +7,7 @@ session_start();
 $score=0;
 $nr_corect_answerd=0;
 $name_user=$_SESSION["user"];
+$dificulty = $_SESSION['mode'];
 if (isset($_POST["q1"])==true && $_POST["q1"]=='good_answer' )
 {
     $score+=5;
@@ -37,8 +38,6 @@ if ($nr_corect_answerd<2)
 {
     $score=-2;
 }
-
-
-
+$info=get_score_and_set($score,$name_user,$dificulty);
 require "../views/Result.php"
 ?>
