@@ -6,10 +6,23 @@ $conn=new mysqli(
     'localhost', // locatia serverului (aici, masina locala)
     'root',       // numele de cont
     '',    // parola (atentie, in clar!)
-    'web project database',   // baza de date
+    'manners_matter',   // baza de date
 );
 if (mysqli_connect_errno()) {
     die ('Eror connection database rankin_model...');
+}
+//image by default
+
+function get_image_by_default()
+{
+  $path='../views/images/avatar.png';
+
+  if(file_exists($path))
+    $content=file_get_contents($path);
+  else
+    $content=null;
+  
+  return $content;
 }
 // arry of 6 people whit name ,score image 
 function get_first_three_users()
@@ -32,7 +45,14 @@ function get_first_three_users()
       $nr+=1;
       $values=[];
       $values["username"]=$rez["username"];
-      $values["profile_image"]=$rez["profile_image"];
+      if ($rez["avatar"]!=null)
+      {
+      $values["avatar"]=$rez["avatar"];
+      }
+      else
+      {
+        $values["avatar"]=get_image_by_default();
+      }
       $result[$nr]=$values;
      }
   }
@@ -75,7 +95,14 @@ function get_first_users_for_page($number_page)
            $values["username"]=$rez["username"];
            $values["score"]=$rez["score"];
            $values["rank"]=$rez["rank"];
-           $values["profile_image"]=$rez["profile_image"];
+           if ($rez["avatar"]!=null)
+           {
+            $values["avatar"]=$rez["avatar"];
+           }
+           else
+           {
+            $values["avatar"]=get_image_by_default();
+           }
            $result[$nr_colums-$nr]=$values;
            $nr+=1;
         }
@@ -112,7 +139,14 @@ function get_first_users_for_page($number_page)
           $values["username"]=$rez["username"];
           $values["score"]=$rez["score"];
           $values["rank"]=$rez["rank"];
-          $values["profile_image"]=$rez["profile_image"];
+          if ($rez["avatar"]!=null)
+          {
+           $values["avatar"]=$rez["avatar"];
+          }
+          else
+          {
+           $values["avatar"]=get_image_by_default();
+          }
           $result[$index_begin]=$values;
           $nr-=1;
           $index_begin+=1;  

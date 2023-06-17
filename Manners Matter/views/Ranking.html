@@ -72,7 +72,7 @@
               <div id="container-places"> 
                 <div class="second-place">
                   <?php 
-                  echo '<div class="second_place_image" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($best_of_3[2]["profile_image"]) . '\');">';
+                  echo '<div class="second_place_image" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($best_of_3[2]["avatar"]) . '\');">';
                   ?>
                 </div>
                 <p style="margin-top: -0.2em; margin-right: 1.2em;">
@@ -84,7 +84,7 @@
   
                 <div class="first-place">
                   <?php 
-                  echo '<div class="first_place_image" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($best_of_3[1]["profile_image"]) . '\');">';
+                  echo '<div class="first_place_image" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($best_of_3[1]["avatar"]) . '\');">';
                   ?>
                   </div>
                   <p style="margin-right:4em ;">
@@ -96,7 +96,7 @@
   
                 <div class="third-place">
                     <?php 
-                    echo '<div class="third_place_image" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($best_of_3[3]["profile_image"]) . '\');">';
+                    echo '<div class="third_place_image" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($best_of_3[3]["avatar"]) . '\');">';
                     ?>
                   </div>
                 <p style="margin-right: 5em;">
@@ -124,7 +124,7 @@
               foreach ($page_info as $key => $info) {
                   $content="";
                   $content .= "<td>" . $key . "</td>";
-                  $content .= '<td><img src="data:image/jpeg;base64,' . base64_encode($info["profile_image"]) . '"/>' . $info["username"] . '</td>';
+                  $content .= '<td><img src="data:image/jpeg;base64,' . base64_encode($info["avatar"]) . '"/>' . $info["username"] . '</td>';
                   $content .= "<td>" . $info['score'] . "</td>";
                   $content .= "<td>" . $info['rank'] . "</td>";
                   echo "<tr>".$content."</tr>";   
