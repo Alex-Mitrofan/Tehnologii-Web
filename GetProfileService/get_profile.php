@@ -23,14 +23,14 @@ function get_profile($username){
 
     $user = [];   
     $user = array('username'=>$arr[0],
-                'rank'     => intval($arr[1]),
-                'score'    => intval($arr[2]),
-                'name'     => ($arr[3]),
-                'location' => ($arr[4]),
-                'age'      => intval($arr[5]),
-                'sex'      => ($arr[6]),
-                'ocupation'=> ($arr[7]),
-                'avatar'   => ($arr[8]));
+                'rank'     => htmlspecialchars(intval($arr[1])),
+                'score'    => htmlspecialchars(intval($arr[2])),
+                'name'     => htmlspecialchars(($arr[3])),
+                'location' => htmlspecialchars(($arr[4])),
+                'age'      => htmlspecialchars(intval($arr[5])),
+                'sex'      => htmlspecialchars(($arr[6])),
+                'ocupation'=> htmlspecialchars(($arr[7])),
+                'avatar'   => htmlspecialchars(($arr[8])));
   
 
 
