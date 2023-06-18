@@ -10,6 +10,7 @@ if (isset($_POST["Difficulty"]))
    
 } 
 
+require '../models/profile_model.php';
 if(isset($_COOKIE["username"]) == True){
     $arr = get_students($_COOKIE["username"]);
     $avatar = $arr[8];
