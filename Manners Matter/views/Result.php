@@ -72,6 +72,7 @@
             echo '<p>Old Score: ' . $info['old_score'] . '</p>';
             echo '<p>New Score: ' . $info['new_score'] . '</p>';
             echo '<p>Old Rank: ' . $info['old_rank'] . '</p>';
+            echo '<p>New Rank:'.$info ['new_rank'] . '</p>';
             echo '<p>Username: ' . $info['username'] . '</p>';
             echo '</div>';
             

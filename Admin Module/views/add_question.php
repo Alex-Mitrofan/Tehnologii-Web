@@ -53,25 +53,43 @@
           
           <div class="question">
             <div class="style">
-            <form>
-              <label for="new_question">Question</label><br>
-              <input type="text" id="new_question" name="new_question" required><br>
-              <label for="correct">Correct Answer</label><br>
-              <input type="text" id="correct" name="correct" required><br>
+            <form action="Admin_Question" method="POST">
+            <label for="new_question">Question</label><br>
+            <input type="text" id="new_question" name="new_question" required><br>
+  
+            <label for="correct">Correct Answer</label><br>
+            <input type="text" id="correct" name="correct" required><br>
 
-              <label for="w1">Wrong Answer</label><br>
-              <input type="text" id="w1" name="w1" required><br>
+            <label for="w1">Wrong Answer</label><br>
+            <input type="text" id="w1" name="w1" required><br>
 
-              <label for="w2">Wrong Answer</label><br>
-              <input type="text" id="w2" name="w2" required><br>
-
-              <label for="w3">Wrong Answer</label><br>
-              <input type="text" id="w3" name="w3" required><br>
-              <input class="submit_button" type="submit" value="Add">
+             <label for="w2">Wrong Answer</label><br>
+             <input type="text" id="w2" name="w2" required><br>
               
+             <label for="w3">Wrong Answer</label><br>
+             <input type="text" id="w3" name="w3" required><br>
+              
+             <input class="submit_button" type="submit" value="Add">
             </form>
             </div>
           </div>
+          <?php
+          if (isset($exist)==True)
+          { 
+            if ($exist==False)
+            {
+              $value='<br><p style="text-align: center; color: green; padding-left:50em">
+              Question has been set </p>';
+              echo $value;
+            } 
+            else
+            {
+              $value='<br><p style="text-align: center; color: green; padding-left:43em">
+              Question has not been set.Already exist!!</p>';
+              echo $value;
+            }
+          } 
+            ?>
        
         </div>
 

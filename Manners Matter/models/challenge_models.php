@@ -8,6 +8,19 @@ $conn=new mysqli(
 if (mysqli_connect_errno()) {
     die ('Eror connection database challenge_model...');
 }
+function new_rank ($score)
+{
+    $result="";
+    if ($score<250)
+      $result="Baby";
+    if ($score>=250 && $score<500)
+      $result="Boy";
+    if ($score>=500 && $score<1000)
+      $result="Man";
+    if ($score>=1000)
+      $result="Getman";
+    return $result;
+}
 function get_score_and_set($score, $name_user,$dificulty)
 {
     global $conn;
@@ -23,7 +36,8 @@ function get_score_and_set($score, $name_user,$dificulty)
 
     // Actualizează scorul utilizatorului
     $new_score = (int) $rez['score'] + (int) $score;
-    $update_query = "UPDATE users SET score = " . $new_score . " WHERE username = '" . mysqli_real_escape_string($conn, $name_user) . "'";
+    $new_rank=new_rank($new_score);
+    $update_query = "UPDATE users SET score = " . $new_score . ", rank = '" .  $new_rank . "' WHERE username = '" . mysqli_real_escape_string($conn, $name_user) . "'";
     $update_result = mysqli_query($conn, $update_query);
     if (!$update_result) {
         die("Error in query: " . mysqli_error($conn));
@@ -34,6 +48,7 @@ function get_score_and_set($score, $name_user,$dificulty)
     $info['old_score'] = $rez['score'];
     $info['new_score'] = $new_score;
     $info['old_rank'] = $rez['rank'];
+    $info['new_rank']=$new_rank;
     $info['username'] = $rez['username'];
     $info['mode']=$dificulty;
    }

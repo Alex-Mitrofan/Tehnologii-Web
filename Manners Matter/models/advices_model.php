@@ -1,7 +1,7 @@
 <?php
  
 function get_advices($age, $ocupation, $context, $job){
-    define ('URL2', 'http://localhost/Manners%20Matter/Tehnologii-Web/GetAdvicesService/get_advices/' . $age . "/" . $ocupation . "/" . $context . "/" . $job);
+    define ('URL2', 'http://localhost/Tehnologii-Web/GetAdvicesService/get_advices/' . $age . "/" . $ocupation . "/" . $context . "/" . $job);
     
     $c = curl_init();
     curl_setopt ($c, CURLOPT_URL, URL2);

@@ -2,7 +2,7 @@
 
 
 function get_students($username){
-    define ('URL', 'http://localhost/Manners%20Matter/Tehnologii-Web/GetProfileService/get_profile/' . $username);
+    define ('URL', 'http://localhost/Tehnologii-Web/GetProfileService/get_profile/' . $username);
     
 
     $c = curl_init();
@@ -14,11 +14,12 @@ function get_students($username){
     #echo $res;
     $decode =  json_decode($res);
     $res = [];
-
-    foreach($decode as $element){
+    if($decode!=null)
+    {
+     foreach($decode as $element){
         array_push($res, $element);
     }
- 
+    }
     return $res;
     
 }   

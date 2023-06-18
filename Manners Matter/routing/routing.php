@@ -50,7 +50,8 @@ elseif (in_array("Result",$arr))
 elseif (is_numeric(strstr($arr[count($arr)-1],"id")[-1])==True && str_contains($arr[count($arr)-1],"Ranking")==True)
     {
       require '../controllers/ranking_controller.php';
-      $_GET["id"]=(int)strstr($arr[count($arr)-1],"id")[-1];
+      if(isset($_GET["id"])) 
+         $_GET["id"]=(int)strstr($arr[count($arr)-1],"id")[-1];
     }
 else 
  echo "Wrong Adress";
