@@ -61,6 +61,18 @@
             <p>email: email2@email.com</p>
             <p>This is another example</p>
           </div>
+          <?php
+          $feedback_section='<div class="feedback">';
+          for ($i=0;$i<count($feedbacks);$i++)
+          {
+            $feedback_section='<div class="feedback">';
+            $feedback_section.='<p>Date: '.$feedbacks[$i]["date"].'</p>';
+            $feedback_section.='<p>email: '.$feedbacks[$i]["email"].'</p>';
+            $feedback_section.='<p>'.$feedbacks[$i]["message"].'</p>';
+            $feedback_section.="</div>";
+            echo $feedback_section;
+          }
+          ?>
         </div>
 
 
