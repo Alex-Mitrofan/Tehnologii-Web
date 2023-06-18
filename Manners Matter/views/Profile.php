@@ -98,7 +98,7 @@
               <li><div class="location">Location: <?php echo $location; ?></div></li>
               <li><div class="age">Age: <?php echo $age; ?></div></li>
               <li><div class="sex">Sex: <?php echo $sex; ?></div></li>
-              <li><div class="ocupation">Ocupation: <?php echo $ocupation; ?></div></li>
+              <li><div class="ocupation">Occupation: <?php echo $ocupation; ?></div></li>
             </ul>
 
             <form action="Export" method="post">

@@ -91,10 +91,6 @@
             <form action="UpdateProfile" method="post">
             <ul>
                 <li>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" value="<?php echo $username; ?>">
-                </li>
-                <li>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" value="<?php echo $name; ?>">
                 </li>
