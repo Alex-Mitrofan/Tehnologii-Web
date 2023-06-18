@@ -10,7 +10,7 @@ if (isset($_GET["id"]))
 require '../models/profile_model.php';
 
 if(isset($_COOKIE["username"]) == True){
-  $arr = get_students($_COOKIE["username"]);
+  $arr = get_user($_COOKIE["username"]);
   $avatar = $arr[8];
 }
 
