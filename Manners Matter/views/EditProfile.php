@@ -27,7 +27,7 @@
         <a href="Home">Manners Matter</a>
       </div>
       <div class="title">
-         Profile
+         Edit Profile
       </div>
       <div class="profile">
         <div class="username">
@@ -80,32 +80,44 @@
               <div class="profile_picture">      
               </div>
 
-              <a href="EditProfile">
-                <button type="button" class="edit"> 
-                  <span class="edit_icon">
-                  </span>
-                  Edit
+              <button type="button" class="edit">
+                <span class="edit_icon">
+                </span>
+                Avatar
               </button>
-              </a>
              
             
             </div>
+            <form action="UpdateProfile" method="post">
             <ul>
-              <li><div class="username">Username: <?php echo $username; ?></div></li>
-              <li><div class="rank">Rank: <?php echo $rank; ?></div></li>
-              <li><div class="score">Score: <?php echo $score; ?>xp</div></li>
-              <li><div class="name">Name: <?php echo $name; ?></div></li>
-              <li><div class="location">Location: <?php echo $location; ?></div></li>
-              <li><div class="age">Age: <?php echo $age; ?></div></li>
-              <li><div class="sex">Sex: <?php echo $sex; ?></div></li>
-              <li><div class="ocupation">Ocupation: <?php echo $ocupation; ?></div></li>
+                <li>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="<?php echo $username; ?>">
+                </li>
+                <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="<?php echo $name; ?>">
+                </li>
+                <li>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" value="<?php echo $location; ?>">
+                </li>
+                <li>
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" value="<?php echo $age; ?>">
+                </li>
+                <li>
+                <label for="sex">Sex:</label>
+                <input type="text" id="sex" name="sex" value="<?php echo $sex; ?>">
+                </li>
+                <li>
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" name="occupation" value="<?php echo $ocupation; ?>">
+                </li>
             </ul>
-
-            <form action="Export" method="post">
-              <button type="submit" class="export">
-                Export Data
-            </button>  
-           </form>
+            <button type="submit" class="export">Save</button>
+            </form>
+ 
           </div>
          
         </div>

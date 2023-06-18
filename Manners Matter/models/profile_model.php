@@ -1,7 +1,7 @@
 <?php
 
 
-function get_students($username){
+function get_user($username){
     define ('URL', 'http://localhost/Manners%20Matter/Tehnologii-Web/GetProfileService/get_profile/' . $username);
     
 
@@ -22,3 +22,5 @@ function get_students($username){
     return $res;
     
 }   
+
+?>

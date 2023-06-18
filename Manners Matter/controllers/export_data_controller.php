@@ -1,6 +1,6 @@
 <?php
 require "../models/profile_model.php";
-$arr = get_students($_COOKIE["username"]);
+$arr = get_user($_COOKIE["username"]);
 
 $username = $arr[0];
 $rank = $arr[1];

@@ -29,6 +29,10 @@ elseif (in_array("Logout", $arr))
     require '../controllers/logout_controller.php';
 elseif (in_array("Export", $arr))
     require '../controllers/export_data_controller.php';
+elseif (in_array("EditProfile", $arr))
+    require '../controllers/edit_profile_controller.php';
+elseif (in_array("UpdateProfile", $arr))
+    require '../controllers/edit_profile_controller.php';
 
 #ARTICLES
 elseif (in_array("Email", $arr))

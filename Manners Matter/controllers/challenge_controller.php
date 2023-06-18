@@ -8,7 +8,7 @@ if(isset($_COOKIE["username"]) == False){
 
 require '../models/profile_model.php';
 
-$arr = get_students($_COOKIE["username"]);
+$arr = get_user($_COOKIE["username"]);
 $avatar = $arr[8];
 
 require '../views/challenge.php';
