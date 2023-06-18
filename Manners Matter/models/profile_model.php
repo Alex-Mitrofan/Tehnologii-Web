@@ -1,9 +1,7 @@
 <?php
 
-
-function get_students($username){
+function get_user($username){
     define ('URL', 'http://localhost/Tehnologii-Web/GetProfileService/get_profile/' . $username);
-    
 
     $c = curl_init();
     curl_setopt ($c, CURLOPT_URL, URL);
@@ -23,3 +21,5 @@ function get_students($username){
     return $res;
     
 }   
+
+?>
