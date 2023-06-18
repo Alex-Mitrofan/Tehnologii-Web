@@ -98,9 +98,12 @@
               <li><div class="sex">Sex: <?php echo $sex; ?></div></li>
               <li><div class="ocupation">Ocupation: <?php echo $ocupation; ?></div></li>
             </ul>
-            <button type="button" class="export">
-              Export Data
-           </button>  
+
+            <form action="Export" method="post">
+              <button type="submit" class="export">
+                Export Data
+            </button>  
+           </form>
           </div>
          
         </div>
