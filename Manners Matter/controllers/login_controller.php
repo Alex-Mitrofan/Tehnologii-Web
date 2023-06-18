@@ -7,7 +7,10 @@ header('Location: Home', true, 303);
 if(isset($_POST["username"]) && isset($_POST["password"])){
 
     require '../models/login_model.php';
-    $result = search_username_password($_POST["username"], $_POST["password"]);
+    $escapedUsername = mysqli_real_escape_string($con, $_POST["username"]);
+    $escapedPassword = mysqli_real_escape_string($con, $_POST["password"]);
+
+    $result = search_username_password($escapedUsername, $escapedPassword);
 
     if($result == 1){
         setcookie("username", $_POST["username"]);

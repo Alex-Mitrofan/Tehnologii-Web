@@ -16,7 +16,9 @@ require '../views/register.php';
 
 #check if username is unique
 if (isset($_POST["username"])){
-    $result = username_already_used($_POST["username"]);
+    $escapedUsername = mysqli_real_escape_string($con, $_POST["username"]);
+   
+    $result = username_already_used($escapedUsername);
     if ($result == 1){
         setcookie("wrong_username", 'True', time() + 86400);
         $_COOKIE["wrong_username"] = 'True';
@@ -39,7 +41,11 @@ if (!isset($_POST["password"]) || !isset($_POST["repeat_password"]))
 
 if($_COOKIE["wrong_username"] == 'False' &&  $_COOKIE["wrong_password"] == 'False'){
     if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["last_name"])) {
-        register($_POST["username"], $_POST["password"], $_POST["last_name"]);
+        $escapedUsername = mysqli_real_escape_string($con, $_POST["username"]);
+        $escapedPassword = mysqli_real_escape_string($con, $_POST["password"]);
+        $escapedName = mysqli_real_escape_string($con, $_POST["last_name"]);
+
+        register($escapedUsername, $escapedPassword, $escapedName);
 
         #setcookie("username", $_POST["username"]);
         #$_SESSION["user"] = $_POST["username"];
