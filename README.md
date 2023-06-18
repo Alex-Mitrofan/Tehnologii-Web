@@ -60,6 +60,7 @@ The application has a section with the ranking of the best users, its purpose be
 ### 1.4 References
 Here is a diagram in figma with the functionalities of the Manners Matter website and the administrative module.<br/>
 https://www.figma.com/file/2cJVIJ6ku0oD69fC9lEOOG/Manner-Matter-Teh-Web?node-id=0%3A1&t=wRPjlI6jsy2qQtMC-1
+Here is a C4 diagram https://drive.google.com/file/d/1cERVsXgzrXQRfqmNIwXbIRhsZTBM5MBC/view?usp=sharing
 
 ## Overall Description
 ### 2.1 Product Perspective
