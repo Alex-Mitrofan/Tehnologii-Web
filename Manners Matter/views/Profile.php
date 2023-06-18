@@ -77,14 +77,14 @@
             
             </div>
             <ul>
-              <li><div class="username">Username: Ben10</div></li>
-              <li><div class="rank">Rank: 132</div></li>
-              <li><div class="score">Score: 2230xp</div></li>
-              <li><div class="name">Name: Ben Hanscom</div></li>
-              <li><div class="location">Location: Roanoke, VA</div></li>
-              <li><div class="age">Age: 93</div></li>
-              <li><div class="sex">Sex: Male</div></li>
-              <li><div class="ocupation">Ocupation: Firefighter</div></li>
+              <li><div class="username">Username: <?php echo $username; ?></div></li>
+              <li><div class="rank">Rank: <?php echo $rank; ?></div></li>
+              <li><div class="score">Score: <?php echo $score; ?>xp</div></li>
+              <li><div class="name">Name: <?php echo $name; ?></div></li>
+              <li><div class="location">Location: <?php echo $location; ?></div></li>
+              <li><div class="age">Age: <?php echo $age; ?></div></li>
+              <li><div class="sex">Sex: <?php echo $sex; ?></div></li>
+              <li><div class="ocupation">Ocupation: <?php echo $ocupation; ?></div></li>
             </ul>
             <button type="button" class="export">
               Export Data

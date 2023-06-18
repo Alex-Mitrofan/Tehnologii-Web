@@ -4,7 +4,21 @@ if(isset($_COOKIE["username"]) == False){
 
     header('Location: Home', true, 303);
 }
+require '../models/profile_model.php';
 
-require '../views/profile.html';
+$arr = get_students($_COOKIE["username"]);
+
+$username = $arr[0];
+$rank = $arr[1];
+$score = $arr[2];
+$name = $arr[3];
+$location = $arr[4];
+$age = $arr[5];
+$sex = $arr[6];
+$ocupation = $arr[7];
+$avatar = $arr[8];
+ 
+ 
+require '../views/profile.php';
 
 ?>
