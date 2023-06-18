@@ -6,6 +6,14 @@ if (isset($_POST["email"]) && isset($_POST["message"]))
    $_POST["email"]=null;
    $_POST["message"]=null;
 }
-require '../views/contact.html';
+
+require '../models/profile_model.php';
+
+if(isset($_COOKIE["username"]) == True){
+    $arr = get_students($_COOKIE["username"]);
+    $avatar = $arr[8];
+  }
+
+require '../views/contact.php';
 
 ?>

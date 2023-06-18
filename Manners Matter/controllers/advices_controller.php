@@ -5,6 +5,11 @@ if(isset($_COOKIE["username"]) == False){
     header('Location: Home', true, 303);
 }
 
-require '../views/advices.html';
+require '../models/profile_model.php';
+
+$arr = get_students($_COOKIE["username"]);
+$avatar = $arr[8];
+
+require '../views/advices.php';
 
 ?>

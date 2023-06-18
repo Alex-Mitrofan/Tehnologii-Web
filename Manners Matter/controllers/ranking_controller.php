@@ -6,5 +6,13 @@ if (isset($_GET["id"]))
   $best_of_3=get_first_three_users();
   $_GET["id"]=null;
 }
+
+require '../models/profile_model.php';
+
+if(isset($_COOKIE["username"]) == True){
+  $arr = get_students($_COOKIE["username"]);
+  $avatar = $arr[8];
+}
+
 require '../views/ranking.php';
 ?>

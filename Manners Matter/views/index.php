@@ -8,6 +8,13 @@
     <link rel="icon" type="image/x-icon" href="views/images/favicon.png">
     <link rel="stylesheet" href="views/styles/style.css">
     <link rel="stylesheet" href="views/styles/home.css">
+    <?php if(isset($_COOKIE["username"]) == True ): if ($avatar): ?>
+    <style>
+      .avatar{
+          background-image:  url('data:image/png;base64,<?php echo $avatar; ?>');
+        }
+    </style>
+    <?php endif; endif;?>
   </head>
   <body>
     <header>

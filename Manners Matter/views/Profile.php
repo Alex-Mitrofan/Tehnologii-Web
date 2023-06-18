@@ -8,6 +8,18 @@
     <link rel="icon" type="image/x-icon" href="./views/images/favicon.png">
     <link rel="stylesheet" href="./views/styles/style.css">
     <link rel="stylesheet" href="./views/styles/profile.css">
+
+    <?php if ($avatar): ?>
+    <style>
+      .profile_picture{
+          background-image:  url('data:image/png;base64,<?php echo $avatar; ?>');
+        }
+      .avatar{
+          background-image:  url('data:image/png;base64,<?php echo $avatar; ?>');
+        }
+    </style>
+    <?php endif; ?>
+
   </head>
   <body>
     <header>
@@ -65,7 +77,7 @@
             
           <div class="profile_elements">
             <div class="upper_part">
-              <div class="profile_picture">
+              <div class="profile_picture">      
               </div>
 
               <button type="button" class="edit">

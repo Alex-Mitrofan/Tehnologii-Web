@@ -1,5 +1,10 @@
 <?php
+require '../models/profile_model.php';
 
-require '../views/articles/interview.html';
+if(isset($_COOKIE["username"]) == True){
+    $arr = get_students($_COOKIE["username"]);
+    $avatar = $arr[8];
+  }
+require '../views/articles/interview.php';
 
 ?>

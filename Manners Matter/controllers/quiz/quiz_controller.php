@@ -9,5 +9,10 @@ if (isset($_POST["Difficulty"]))
     $_POST["Difficulty"] = null;
    
 } 
+
+if(isset($_COOKIE["username"]) == True){
+    $arr = get_students($_COOKIE["username"]);
+    $avatar = $arr[8];
+  }
 require '../views/quiz/quiz.php';
 ?>

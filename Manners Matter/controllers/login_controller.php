@@ -1,6 +1,8 @@
 <?php
 session_start();
- 
+
+if(isset($_COOKIE["username"]))
+header('Location: Home', true, 303);
  
 if(isset($_POST["username"]) && isset($_POST["password"])){
 

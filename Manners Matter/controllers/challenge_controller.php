@@ -6,5 +6,10 @@ if(isset($_COOKIE["username"]) == False){
     header('Location: Home', true, 303);
 }
 
-require '../views/challenge.html';
+require '../models/profile_model.php';
+
+$arr = get_students($_COOKIE["username"]);
+$avatar = $arr[8];
+
+require '../views/challenge.php';
 ?>
