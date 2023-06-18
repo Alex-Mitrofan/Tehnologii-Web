@@ -68,7 +68,7 @@
       </nav>
         
         <div class="div_articles">
-          <form>
+          <form method="post" action="Advices">
             <fieldset>
               <legend>Please select what fits you the best:</legend>
               <div>
@@ -123,19 +123,11 @@
           <div class="list_of_advices">
             <h2>List of advices:</h2>
             <ol>
-              <li>In personal texts, anything goes when it comes to emojis.</li>
-              <li>On social media, serious content warrants fewer emojis due to their cartoonish nature.</li>
-              <li>Emojis should be used sparingly in semi formal communication.</li>
-              <li>Using emojis with coworkers depends on the nature of the relationship and the subject of discussion.</li>
-              <li>If your communication with a client or customer has always centered around business and nothing else, steer clear from emoji use</li>
-              <li>When communicating with your boss or any higher-up, emoji use is ill-advised.</li>
-              <li>In video conference mute yourself when not speaking.</li>
-              <li>Be on time on meetings.</li>
-              <li>Before joining a video conference ensure your technology works correctly.</li>
-              <li>In a video conference wear work-appropriate clothing.</li>
-              <li>In a video conference frame the camera correctly.</li>
-              <li>In a video conference look into the camera.</li>
-              <li>In a conference or interview pay attention.</li>
+              <?php
+                for($i=0; $i<count($advices); $i++){
+                  echo "<li>" . $advices[$i] . "</li>";
+                }
+              ?>
             </ol>
         </div>
 
